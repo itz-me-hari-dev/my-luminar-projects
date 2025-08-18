@@ -42,7 +42,7 @@
     <!-- nav-section-start -->
     <nav class="navbar navbar-expand-lg nav-bg-color">
         <div class="container">
-            <a class="navbar-brand" href="#">TICKTOK</a>
+            <a class="navbar-brand" href="./product-list.html">TICKTOK</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -66,8 +66,9 @@
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="./cart.html">Cart</a>
                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./product-delivery-info.html"><span class="me-1">My</span><span>Orders</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./product-delivery-info.html"><span
+                                class="me-1">My</span><span>Orders</span></a>
                     </li>
                 </ul>
             </div>
@@ -76,77 +77,63 @@
     <!-- nav-section-end -->
 
     <!-- body-section-start -->
-     <h1 class="text-center">My Orders</h1>
-    <div class="container">
-        <table class="table align-middle">
-            <thead class="table-light">
-                <tr>
-                    <th scope="col"></th>
-                    <th scope="col">Product</th>
-                    <th scope="col">Quantity</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Subtotal</th>
-                    <th scope="col">Delivery Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
+    <h1 class="text-center">My Orders</h1>
+    <div class="container my-4">
 
-                    <!-- Product with Image -->
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <img src="./product-delivery-info/images/product-1.avif" alt="Classic Watch"
-                                class="img-thumbnail me-2" style="width:100px;">
-                            <div>
-                                <h6 class="mb-0">Seiko</h6>
-                                <small class="text-muted">Model:SRPL75J1</small>
-                            </div>
-                        </div>
-                    </td>
-                    <td>1</td>
-                    <td>₹ 50,000</td>
-                    <td>₹50,500</td>
-                    <td><span class="badge-1">Shipped</span></td>
-                </tr>
+        <!-- Product 1 -->
+        <div class="card mb-3 shadow-sm p-3">
+            <div class="d-flex flex-column flex-md-row align-items-center">
+                <div class="d-flex align-items-center flex-grow-1 me-md-3 mb-2 mb-md-0">
+                    <img src="./product-delivery-info/images/product-1.avif" alt="Classic Watch"
+                        class="img-thumbnail me-2" style="width:100px;">
+                    <div>
+                        <h6 class="mb-0">Seiko</h6>
+                        <small class="text-muted">Model: SRPL75J1</small>
+                    </div>
+                </div>
+                <div class="me-md-3 mb-2 mb-md-0">Quantity: 1</div>
+                <div class="me-md-3 mb-2 mb-md-0">Price: ₹50,000</div>
+                <div class="me-md-3 mb-2 mb-md-0">Subtotal: ₹50,500</div>
+                <div><span class="badge-1">Shipped</span></div>
+            </div>
+        </div>
 
-                <tr>
-                    <th scope="row">2</th>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <img src="./product-delivery-info/images/product-2.avif" alt="Sport Watch"
-                                class="img-thumbnail me-2" style="width:100px;">
-                            <div>
-                                <h6 class="mb-0">Victorinox</h6>
-                                <small class="text-muted">Model:241693</small>
-                            </div>
-                        </div>
-                    </td>
-                    <td>2</td>
-                    <td>₹35,000</td>
-                    <td>₹35,500</td>
-                    <td><span class="badge-1">delivered</span></td>
-                </tr>
+        <!-- Product 2 -->
+        <div class="card mb-3 shadow-sm p-3">
+            <div class="d-flex flex-column flex-md-row align-items-center">
+                <div class="d-flex align-items-center flex-grow-1 me-md-3 mb-2 mb-md-0">
+                    <img src="./product-delivery-info/images/product-2.avif" alt="Sport Watch"
+                        class="img-thumbnail me-2" style="width:100px;">
+                    <div>
+                        <h6 class="mb-0">Victorinox</h6>
+                        <small class="text-muted">Model: 241693</small>
+                    </div>
+                </div>
+                <div class="me-md-3 mb-2 mb-md-0">Quantity: 2</div>
+                <div class="me-md-3 mb-2 mb-md-0">Price: ₹35,000</div>
+                <div class="me-md-3 mb-2 mb-md-0">Subtotal: ₹35,500</div>
+                <div><span class="badge-1">Delivered</span></div>
+            </div>
+        </div>
 
-                <tr>
-                    <th scope="row">3</th>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <img src="./product-delivery-info/images/product-3.avif" alt="Smart Watch"
-                                class="img-thumbnail me-2" style="width:100px;">
-                            <div>
-                                <h6 class="mb-0"> Tissot</h6>
-                                <small class="text-muted">Model:T1502101104101</small>
-                            </div>
-                        </div>
-                    </td>
-                    <td>1</td>
-                    <td>₹68,700</td>
-                    <td>₹69,200</td>
-                    <td><span class="badge-1">Processing</span></td>
-                </tr>
-            </tbody>
-        </table>
+        <!-- Product 3 -->
+        <div class="card mb-3 shadow-sm p-3">
+            <div class="d-flex flex-column flex-md-row align-items-center">
+                <div class="d-flex align-items-center flex-grow-1 me-md-3 mb-2 mb-md-0">
+                    <img src="./product-delivery-info/images/product-3.avif" alt="Smart Watch"
+                        class="img-thumbnail me-2" style="width:100px;">
+                    <div>
+                        <h6 class="mb-0">Tissot</h6>
+                        <small class="text-muted">Model: T1502101104101</small>
+                    </div>
+                </div>
+                <div class="me-md-3 mb-2 mb-md-0">Quantity: 1</div>
+                <div class="me-md-3 mb-2 mb-md-0">Price: ₹68,700</div>
+                <div class="me-md-3 mb-2 mb-md-0">Subtotal: ₹69,200</div>
+                <div><span class="badge-1">Processing</span></div>
+            </div>
+        </div>
+
     </div>
     <!-- body-section-end -->
 
