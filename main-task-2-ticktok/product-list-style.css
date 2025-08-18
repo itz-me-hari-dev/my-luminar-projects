@@ -28,7 +28,7 @@ body{
 }
 
 .container-fluid {
-    background-color: var(--bg-color-secondary);
+    background-color: var(--footer-color-primary);
 }
 
 .card-img-container {
