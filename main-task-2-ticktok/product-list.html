@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TickTok-Product-List</title>
+
+    <!-- bs--css-cdn-start -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- bs-css-cdn-end -->
+
+    <!-- bs-js-cdn-start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <!-- bs--js-cdn-end -->
+
+    <!-- font-awesome-cdn-start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font-awesome-cdn-end -->
+
+    <!-- google-font-link-start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- google-font-link-end -->
+
+    <!-- css-custom-start -->
+    <link rel="stylesheet" href="./product-list-style.css">
+    <!-- css-custom-end -->
+
+</head>
+
+<body>
+    <!-- nav-section-start -->
+    <nav class="navbar navbar-expand-lg nav-bg-color">
+        <div class="container">
+            <a class="navbar-brand" href="./product-list.html">TICKTOK</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./product-list.html">Best Seller</a></li>
+                            <li><a class="dropdown-item" href="./product-list.html">New Arrival</a></li>
+                            <li><a class="dropdown-item" href="./product-list.html">Offers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./cart.html">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./product-delivery-info.html"><span class="me-1">My</span><span>Orders</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav-section-end -->
+
+
+    <!-- body-section-start -->
+
+    <!-- carousel-section-start -->
+    <div class="container-fluid">
+        <div class="container">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="6000">
+                        <img src="./product-list/images/image-1.PNG" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Classic Watches for Men</h5>
+                            <a href="#" class="btn active" role="button" data-bs-toggle="button"
+                                aria-pressed="true">Shop
+                                Now</a>
+                            <p>With this selection of classic watches for men, Tissot brings together craftsmanship,
+                                accuracy
+                                and luxury. From the retro vibe of our PRX line to the timeless style of our Gentleman
+                                watches,
+                                you will always find the perfect timepiece for a classic and elegant look.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="6000">
+                        <img src="./product-list/images/image-2.PNG" class="d-block w-100" alt="..." >
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Tissot PR 100</h5>
+                            <a href="#" class="btn active" role="button" data-bs-toggle="button"
+                                aria-pressed="true">Shop
+                                Now</a>
+                            <p>Since its creation in the early 1980s, the best-selling Tissot PR 100 has remained true
+                                to its
+                                name: precise ("P"), robust ("R") and water-resistant up to a pressure of 10 bar (100
+                                m).
+                                Bringing together the best features of Tissot watches, the new design offers a large
+                                dial thanks
+                                to the narrow bezel, combined with finesse and elegance.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="6000">
+                        <img src="./product-list/images/image-3.PNG" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Tissot Le Locle</h5>
+                            <a href="#" class="btn active" role="button" data-bs-toggle="button"
+                                aria-pressed="true">Shop
+                                Now</a>
+                            <p>Crafted with high quality materials, a classic but sophisticated design and a
+                                top-of-the-range
+                                automatic movement, and named after the town Tissot was founded in, Le Locle watches
+                                perfectly
+                                embody the heritage of the brand.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- carousel-section-end -->
+
+    <!-- product-list-section-start -->
+    <div class="container text-center p-5 w-100">
+
+        <!-- row-1-start -->
+        <div class="row mb-5 g-4">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card w-100 shadow product-card">
+                    <div class="card-img-container">
+                        <img src="./product-list/images/product-1.avif" class="card-img-top p-4 object-fit-cover" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tissot</h5>
+                        <p class="card-text">Tissot Le Locle Powermatic 80</p>
+                        <p class="fw-bold">MRP  ₹ 63,000</p>
+                        <a href="./product-detail.html" class="shop-tag p-2 rounded-1">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card shadow w-100 product-card">
+                    <div class="card-img-container">
+                        <img src="./product-list/images/product-2.avif" class="card-img-top p-4 object-fit-cover" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Longines</h5>
+                        <p class="card-text">The Longines Master Collection</p>
+                        <p class="fw-bold">MRP ₹ 3,22,000</p>
+                        <a href="./product-detail.html" class="shop-tag p-2 rounded-1">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card shadow w-100 product-card">
+                    <div class="card-img-container">
+                        <img src="./product-list/images/product-3.avif" class="card-img-top p-4 object-fit-cover" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Longines</h5>
+                        <p class="card-text">Master</p>
+                        <p class="fw-bold">MRP ₹ 3,96,000</p>
+                        <a href="./product-detail.html" class="shop-tag p-2 rounded-1">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card shadow w-100 product-card">
+                    <div class="card-img-container">
+                        <img src="./product-list/images/product-4.avif" class="card-img-top p-4 object-fit-cover" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Longines</h5>
+                        <p class="card-text">The Longines Master Collection</p>
+                        <p class="fw-bold">MRP ₹ 2,71,000</p>
+                        <a href="./product-detail.html" class="shop-tag p-2 rounded-1">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- row-1-end -->
+
+        <!-- row-2-start -->
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card shadow w-100">
+                    <div class="card-img-container product-card">
+                        <img src="./product-list/images/product-5.avif" class="card-img-top p-4 object-fit-cover" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Longines</h5>
+                        <p class="card-text">Conquest</p>
+                        <p class="fw-bold">MRP ₹ 2,01,000</p>
+                        <a href="./product-detail.html" class="shop-tag p-2 rounded-1">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card shadow w-100 product-card">
+                    <div class="card-img-container">
+                        <img src="./product-list/images/product-6.avif" class="card-img-top p-4 object-fit-cover" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Longines</h5>
+                        <p class="card-text">Longines Spirit Zulu Time</p>
+                        <p class="fw-bold">MRP ₹ 2,01,000</p>
+                        <a href="./product-detail.html" class="shop-tag p-2 rounded-1">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card shadow w-100 product-card">
+                    <div class="card-img-container">
+                        <img src="./product-list/images/product-7.avif" class="card-img-top p-4 object-fit-cover" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tissot</h5>
+                        <p class="card-text">Seastar 1000 Powermatic 80</p>
+                        <p class="fw-bold">MRP ₹ 80,000</p>
+                        <a href="./product-detail.html" class="shop-tag p-2 rounded-1">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card shadow w-100 product-card">
+                    <div class="card-img-container">
+                        <img src="./product-list/images/product-8.avif" class="card-img-top p-4 object-fit-cover" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Longines</h5>
+                        <p class="card-text">The Longines Master Collection</p>
+                        <p class="fw-bold">MRP ₹ 2,71,000</p>
+                        <a href="./product-detail.html" class="shop-tag p-2 rounded-1">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- row-2-end -->
+
+    </div>
+    <!-- product-list-section-end -->
+
+    <!-- body-section-start -->
+    
+
+    <!-- footer-section-start -->
+    <footer class="footer-color pt-5 pb-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Brand -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">TICKTOK</h5>
+                    <p>Your trusted store for premium watches and timeless style.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4 mb-4 footer-atag-color">
+                    <h5 class="fw-bold">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./product-list.html" class="text-decoration-none">Shop</a></li>
+                        <li><a href="./index.html" class="text-decoration-none">Account</a></li>
+                        <li><a href="./cart.html" class="text-decoration-none">Cart</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-md-4 mb-4 footer-atag-color">
+                    <h5 class="fw-bold ">Follow Us</h5>
+                    <a href="#" class="me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class=""><i class="fab fa-youtube fa-lg"></i></a>
+                </div>
+            </div>
+
+            <hr class="border-dark">
+
+            <!-- Copyright -->
+            <div class="text-center">
+                <small>&copy; 2025 TICKTOK. All Rights Reserved.</small>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-section-end -->
+
+
+</body>
+
+</html>

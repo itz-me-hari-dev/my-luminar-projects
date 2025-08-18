@@ -1,0 +1,102 @@
+/* var */
+:root {
+    --bg-color-primary:#F2F2F2;
+    --text-color-primary:#272324;
+    --footer-color-primary:#FFFFFF;
+}
+
+
+/* body-section */
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color-primary);
+    color:var(--text-color-primary) ;
+    font-family: 'Courier Prime', monospace;
+    font-weight: 400;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+}
+
+/* nav-section */
+.nav-bg-color{
+    background-color: var(--bg-color);
+}
+
+.nav-item>a,
+.dropdown-item {
+    color: var(--text-color-primary);
+}
+
+.heading>h1 {
+  color: var(--color-text-primary);
+}
+
+/* sign-in-section */
+.icon-1 {
+color: var(--text-color-primary);
+  font-size: 25px;
+}
+
+.icon-1>i:hover {
+  transform: scale(1.5);
+}
+
+.icon-1>i{
+  transition:0.3s ease;
+}
+
+.input-box {
+  border: var(--text-color-primary) solid 1px;
+  color: var(--bg-color-primary);
+}
+
+.text-color{
+  color: var(--color-text-primary);
+}
+
+.input-color {
+  background-color: var(--color-text-primary);
+  border: none;
+}
+
+.input-color::placeholder {
+  color: var(--color-bg)
+}
+
+.button-1 {
+  background-color: var(--bg-color-primary);
+  color: var(--text-color-primary);
+  border: var(--text-color-primary) solid 1px;
+
+}
+
+.button-1:hover {
+  background-color: var(--text-color-primary);
+  color: var(--bg-color-primary);
+}
+
+.a-tag-1 {
+  display: inline-block;
+  transition:0.3s ease;
+  text-decoration: none;
+  color: var(--text-color-primary);
+}
+
+.a-tag-1:hover {
+  transform: scale(1.2);
+
+}
+
+/* footer-section */
+.footer-color {
+    background-color: var(--footer-color-primary);
+    color: var(--text-color-primary);
+}
+
+.footer-atag-color>ul>li>a,
+.footer-atag-color>a {
+    color: var(--text-color-primary);
+}

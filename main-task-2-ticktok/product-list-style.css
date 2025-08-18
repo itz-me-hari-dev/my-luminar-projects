@@ -1,0 +1,73 @@
+:root {
+    --bg-color-primary:#F2F2F2;
+    --bg-color-secondary:#DFD8CE;
+    --text-color-primary:#272324;
+    --footer-color-primary:#FFFFFF;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color-primary);
+    color:var(--text-color-primary) ;
+    font-family: 'Courier Prime', monospace;
+    font-weight: 400;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+}
+
+.nav-bg-color{
+    background-color: var(--bg-color);
+}
+
+.nav-item>a,
+.dropdown-item {
+    color: var(--text-color-primary);
+}
+
+.container-fluid {
+    background-color: var(--bg-color-secondary);
+}
+
+.card-img-container {
+    height: 70%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-img-container img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.product-card{
+    transition: tranform  200s ease-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.shop-tag {
+    border: var(--text-color-primary) solid 1px ;
+    color: var(--text-color-primary);
+    text-decoration: none;
+}
+
+.shop-tag:hover {
+    background-color: var(--text-color-primary);
+    color: var(--bg-color-primary);
+}
+
+.footer-color {
+    background-color: var(--footer-color-primary);
+    color: var(--text-color-primary);
+}
+
+.footer-atag-color>ul>li>a,
+.footer-atag-color>a {
+    color: var(--text-color-primary);
+}
