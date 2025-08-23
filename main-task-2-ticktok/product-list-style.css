@@ -44,7 +44,7 @@ body{
 }
 
 .product-card{
-    transition: tranform  200s ease-out;
+    transition: tranform  0.3s ease;
 }
 
 .product-card:hover {
