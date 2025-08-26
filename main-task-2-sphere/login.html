@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in</title>
+
+    <!-- bs--css-cdn-start -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- bs-css-cdn-end -->
+
+    <!-- bs-js-cdn-start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <!-- bs--js-cdn-end -->
+
+    <!-- font-awesome-cdn-start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font-awesome-cdn-end -->
+
+    <!-- google-font-link-start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- google-font-link-end -->
+
+    <!-- css-custom-start -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- css-custom-end -->
+
+</head>
+
+<body>
+
+    <!-- nav-section-start -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container px-5 nav-bar-style p-2">
+            <a class="navbar-brand" href="#">SPHERE</a>
+            <button class="navbar-toggler hamburger-nav" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Messages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-disabled="true">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav-section-end -->
+
+    <!-- body-section-start -->
+    <div class="container login-body-container-style w-100 h-auto p-5">
+        <div class="login-body-style d-flex flex-column justify-content-center align-items-center">
+            <h1 class="fw-bold display-5 login-heading">Login</h1>
+            <form class="w-50 mt-5">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address or Phone number </label>
+                    <input type="email number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter Your Email Address or phone Number">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1"
+                        placeholder="Enter Your Password">
+                </div>
+                <div class="sign-in-button d-flex justify-content-center align-items-center mt-5">
+                    <button type="submit" class="btn-login p-2">Login</button>
+                </div>
+                <div class="text-center mt-5">
+                    <a href="#" class="text-decoration-none forget-a-tag">Forget Password?</a>
+                </div>
+                <div class="text-center mt-3">
+                    <span class="text-white login-span">Or Login With</span>
+                </div>
+                <div class="d-flex justify-content-center align-items-center gap-3 mt-3">
+                    <button type="button" class="btn btn-outline-light px-4 py-2 btn-social-login"><i
+                            class="fa-brands fa-google"></i></button>
+                    <button type="button" class="btn btn-outline-light px-4 py-2 btn-social-login"><i
+                            class="fa-brands fa-apple"></i></button>
+                    <button type="button" class="btn btn-outline-light px-4 py-2 btn-social-login"><i
+                            class="fa-brands fa-windows"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- body-section-end -->
+
+    <!-- footer-section-start -->
+    <footer class="footer-body-style w-100 h-auto mt-5 p-3">
+        <div class="container footer-container-style row mx-auto">
+            <!-- Logo / Brand -->
+            <div class="col-12 mt-2">
+                <h4 class="fw-bold text-center text-white">SPHERE</h4>
+                <p class="small  text-center text-white">The global conversation space</p>
+            </div>
+
+            <hr class="border-light">
+
+            <!-- Navigation -->
+            <div class="col-lg-6 col-sm-12 mb-3">
+                <h6 class="fw-bold text-white">Quick Links</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Explore</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Messages</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Profile</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="col-lg-6 col-sm-12">
+                <h6 class="fw-bold text-white">Follow Us</h6>
+                <a href="#" class="text-white me-3"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" class="text-white me-3"><i class="fa-brands fa-threads"></i></a>
+                <a href="#" class="text-white me-3"><i class="fa-brands fa-x-twitter"></i></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <hr class="border-light">
+
+            <p class=" text-center small text-white">&copy; 2025 AGORA. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- footer-section-start -->
+
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in</title>
+
+    <!-- bs--css-cdn-start -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- bs-css-cdn-end -->
+
+    <!-- bs-js-cdn-start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <!-- bs--js-cdn-end -->
+
+    <!-- font-awesome-cdn-start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font-awesome-cdn-end -->
+
+    <!-- google-font-link-start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- google-font-link-end -->
+
+    <!-- css-custom-start -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- css-custom-end -->
+
+</head>
+
+<body>
+
+    <!-- nav-section-start -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container px-5 nav-bar-style p-2">
+            <a class="navbar-brand" href="#">SPHERE</a>
+            <button class="navbar-toggler hamburger-nav" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Messages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-disabled="true">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav-section-end -->
+
+    <!-- Hero Section-carousel-section-start -->
+    <div class="container mt-5 p-5 home-container-carousel-style shadow">
+        <div id="carouselExampleCaptions" class="carousel slide mx-auto" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="./home-page-assets/image-1.JPG" class="d-block home-carousel-img-style" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="display-2 fw-bold home-carousel-heading-style">Welcome to Sphere</h5>
+                        <p class="display-6 fw-bold home-carousel-para-style"> The World Connected.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./home-page-assets/image-2.JPG" class="d-block home-carousel-img-style" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="display-2 fw-bold home-carousel-heading-style">Share Your Voice</h5>
+                        <p class="display-6 fw-bold home-carousel-para-style">Join conversations that matter.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./home-page-assets/image-4.JPG" class="d-block home-carousel-img-style" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="display-2 fw-bold home-carousel-heading-style">Connect Globally</h5>
+                        <p class="display-6 fw-bold home-carousel-para-style">Meet people and ideas worldwide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Hero Section-carousel-section-start -->
+
+    <!-- features-section-section-start -->
+    <div class="container features-container mt-5 mb-5">
+        <div class="row">
+            <div class="col">
+                <div class="features-card-style w-100 p-5">
+                    <i class="fa-solid fa-globe display-1 d-block mx-auto mb-3"></i>
+                    <div class="features-card-body-style">
+                        <h3 class="text-center">Connect Globally</h3>
+                        <p class="text-center">Meet and interact with people from around the world, building new
+                            friendships and expanding your network beyond borders.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col">
+                    <div class="features-card-style w-100 p-5">
+                        <i class="fa-solid fa-comment-dots display-1 d-block mx-auto mb-3"></i>
+                        <div class="features-card-body-style">
+                            <h3 class="text-center">Connect Globally</h3>
+                            <p class="text-center">Meet and interact with people from around the world, building new
+                                friendships and expanding your network beyond borders.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col">
+                    <div class="features-card-style w-100 p-5">
+                        <i class="fa-solid fa-bolt display-1 d-block mx-auto mb-3"></i>
+                        <div class="features-card-body-style">
+                            <h3 class="text-center">Connect Globally</h3>
+                            <p class="text-center">Meet and interact with people from around the world, building new
+                                friendships and expanding your network beyond borders.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="features-card-style w-100 p-5">
+                    <i class="fa-solid fa-lock display-1 d-block mx-auto mb-3"></i>
+                    <div class="features-card-body-style">
+                        <h3 class="text-center">Connect Globally</h3>
+                        <p class="text-center">Meet and interact with people from around the world, building new
+                            friendships and expanding your network beyond borders.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- features-section-section-end -->
+
+    <!-- footer-section-start -->
+    <footer class="footer-body-style w-100 h-auto mt-5 p-3">
+        <div class="container footer-container-style row mx-auto">
+            <!-- Logo / Brand -->
+            <div class="col-12 mt-2">
+                <h4 class="fw-bold text-center text-white">SPHERE</h4>
+                <p class="small  text-center text-white">The global conversation space</p>
+            </div>
+
+            <hr class="border-light">
+
+            <!-- Navigation -->
+            <div class="col-lg-6 col-sm-12 mb-3">
+                <h6 class="fw-bold text-white">Quick Links</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Explore</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Messages</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Profile</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="col-lg-6 col-sm-12">
+                <h6 class="fw-bold text-white">Follow Us</h6>
+                <a href="#" class="text-white me-3"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" class="text-white me-3"><i class="fa-brands fa-threads"></i></a>
+                <a href="#" class="text-white me-3"><i class="fa-brands fa-x-twitter"></i></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <hr class="border-light">
+
+            <p class=" text-center small text-white">&copy; 2025 AGORA. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- footer-section-start -->
+
+</body>
+
+</html>
