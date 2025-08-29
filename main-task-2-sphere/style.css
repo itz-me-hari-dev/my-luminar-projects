@@ -189,7 +189,11 @@ body {
 /* body-left-section-end */
 
 /* body-middle-section-start */
-
+    .post-page-middle-body-notes-card--img-style >.img-user-name> img{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
 /* body-middle-section-end */
 
 /* body-right-section-start */
@@ -206,6 +210,7 @@ body {
 
 .profile-page-body-row {
     margin-left: 3%;
+    margin-right: 0%;
 }
 
 .profile-page-left-body-style,

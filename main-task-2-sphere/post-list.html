@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Post-List</title>
+    <title>Post-list</title>
 
     <!-- bs--css-cdn-start -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -38,92 +38,137 @@
 </head>
 
 <body>
-    <!-- nav-section-start -->
-    <nav class="navbar">
-        <div class="container px-5 nav-bar-style p-2 body-style">
-            <a class="navbar-brand">SPHERE</a>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                <button class="btn-nav px-3" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
-    <!-- nav-section-end -->
 
     <!-- body-section-start -->
-    <div class="container-fluid">
-        <div class="row gap-5 mt-5 justify-content-center">
-            <!-- body-left-section-start -->
+    <div class="container-fluid my-5">
+        <div class="row gap-4 profile-page-body-row">
+            <!-- left-body-section-start -->
+            <div class="col-lg-2 col--12 sticky-lg-top profile-page-left-body-style body-style">
+                <!-- Toggle button (mobile only) -->
+                <div class="d-lg-none mb-2">
+                    <button class="body-style text-white w-100 p-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#sidebarMenu" aria-expanded="false" aria-controls="sidebarMenu">
+                        <i class="fa-solid fa-bars me-2"></i> Menu
+                    </button>
+                </div>
+                <!-- Sidebar menu (shared for all screens) -->
+                <div id="sidebarMenu"
+                    class="collapse d-lg-flex  flex-column gap-2 gap-lg-5  side-box p-2 p-lg-3 h-auto h-lg-100 text-white ">
+                    <div class="profile-page-left-body-tab-style"><span class="fw-bolder fs-4">SPHERE</span>
+                    </div>
+                    <div class="profile-page-left-body-tab-style"><i
+                            class="fa-solid fa-house me-2"></i><span>Home</span>
+                    </div>
+                    <div class="profile-page-left-body-tab-style"><i
+                            class="fa-solid fa-newspaper me-2"></i><span>Explore</span>
+                    </div>
+                    <div class="profile-page-left-body-tab-style"><i class="fa-solid fa-bell"></i><span>
+                            Notification</span>
+                    </div>
+                    <div class="profile-page-left-body-tab-style"><i
+                            class="fa-solid fa-message me-2"></i><span>Message</span>
+                    </div>
+                    <div class="profile-page-left-body-tab-style"><i
+                            class="fa-solid fa-bookmark"></i><span>Bookmark</span>
+                    </div>
+                    <div class="profile-page-left-body-tab-style"><i
+                            class="fa-solid fa-people-group me-2"></i><span>Communities</span>
+                    </div>
+                    <div class="profile-page-left-body-tab-style"><i
+                            class="fa-solid fa-user me-2"></i><span>Profile</span>
+                    </div>
+                    <div class="profile-page-left-body-tab-style"><i
+                            class="fa-solid fa-angles-right me-2"></i><span>More</span>
+                    </div>
+                    <div class="profile-page-left-body-tab-style"><i
+                            class="fa-solid fa-gear me-2"></i><span>Settings</span>
+                    </div>
+                    <div class="profile-page-left-body-tab-style"><i class="fa-solid fa-plus"></i><span>Post</span>
+                    </div>
+                </div>
+            </div>
+            <!-- left-body-section-end -->
+
+            <!-- middle-body-section-start-->
             <div
-                class="col-lg-1 body-style py-auto text-white sticky-top post-list-left-body-style ms-2 d-flex flex-column justify-content-evenly align-items-center">
-                <div class="post-list-left-body-tab-style"><i class="fa-solid fa-circle-exclamation display-5 "></i></div>
-                <div class="post-list-left-body-tab-style"><i class="fa-solid fa-circle-exclamation display-5 "></i></div>
-                <div class="post-list-left-body-tab-style"><i class="fa-solid fa-circle-exclamation display-5 "></i></div>
-                <div class="post-list-left-body-tab-style"><i class="fa-solid fa-circle-exclamation display-5 "></i></div>
-                <div class="post-list-left-body-tab-style"><i class="fa-solid fa-circle-exclamation display-5 "></i></div>
-                <div class="post-list-left-body-tab-style"><i class="fa-solid fa-circle-exclamation display-5 "></i></div>
-                <div class="post-list-left-body-tab-style"><i class="fa-solid fa-circle-exclamation display-5 "></i></div>
-                <div class="post-list-left-body-tab-style"><i class="fa-solid fa-circle-exclamation display-5 "></i></div>
-                <div class="post-list-left-body-tab-style"><i class="fa-solid fa-circle-exclamation display-5 "></i></div>
-                <div class="post-list-left-body-tab-style"><i class="fa-solid fa-circle-exclamation display-5 "></i></div>
-                <div class="post-list-left-body-tab-style"><i class="fa-solid fa-circle-exclamation display-5 "></i></div>
-                <div class="post-list-left-body-tab-style"><i class="fa-solid fa-circle-exclamation display-5 "></i></div>
+                class="col-lg-6 col-12 profile-page-middle-body-style body-style post-page-middle-body-style body-style text-white">
+                <div class="d-flex justify-content-evenly align-items-center ">
+                    <h1 class="fw-bold fs-3 text-center">For You</h1>
+                </div>
+                <div class="card profile-page-middle-body-notes-card-style post-page-middle-body-notes-card-style">
+                    <div class="card-body">
+                        <div
+                            class="text-center card-style post-page-middle-body-notes-card--img-style d-flex justify-content-between align-content-center">
+                            <div class="img-user-name">
+                                <img src="./post-list-page-assets/profile-1.jpg" class="object-fit-cover" alt="...">
+                                <span>john_watson</span>
+                            </div>
+                            <div class="pt-2">
+                                <p class="card-text text-white"><small class="">Noted 3 years ago</small></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="card-text">When Nelson Mandela walked free in 1990 after 27 years in prison, it
+                            wasn’t just a man stepping out of confinement. It was a nation breaking its chains of
+                            apartheid. His release became a symbol of resilience, forgiveness, and the belief that
+                            justice can outlast oppression.</p>
+                    </div>
+                    <img src="./profile-page-assets/post-img-1.jpg" class="card-img-bottom object-fit-cover" alt="...">
+                    <div class="d-flex justify-content-between align-items-center px-4 mb-3 mt-3">
+                        <div class="d-flex justify-content-evenly align-items-center gap-3">
+                            <div> <i class="fa-solid fa-comments me-1"></i><span>196</span>
+                            </div>
+                            <div><i class="fa-solid fa-share me-1"></i><span>36</span></div>
+                            <div><i class="fa-solid fa-star me-1"></i><span>556</span></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- body-left-section-end -->
+            <!-- middle-body-section-end -->
 
-            <!-- body-middle-section-start -->
-            <div class="col-lg-8 body-style text-white post-list-middle-body-style">
-                <div class="card mb-3">
-                    <img src="./post-list-page-assets/image-sample.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                    </div>
+            <!-- right-body-section-start-->
+            <div
+                class="col-lg-3 d-none d-lg-flex flex-column  sticky-top profile-page-right-body-style body-style text-white p-3">
+                <div class="d-flex my-3">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn border-white rounded-5 text-white" type="submit">Search</button>
                 </div>
-                <div class="card mb-3">
-                    <img src="./post-list-page-assets/image-sample.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                    </div>
+                <hr>
+                <h5 class="fw-bold mb-3">Trending Now</h5>
+                <div class="mb-3">
+                    <small class="text-secondary">#Politics</small>
+                    <p class="mb-1 fw-semibold">Global leaders gather for Climate Summit 2025</p>
+                    <small class="text-secondary">42.1K Notes</small>
                 </div>
-                <div class="card mb-3">
-                    <img src="./post-list-page-assets/image-sample.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <img src="./post-list-page-assets/image-sample.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                    </div>
-                </div>
-            </div>
-            <!-- body-middle-section-end -->
 
-            <!-- body-right-section-start -->
-            <div class="col-lg-2 body-style text-white sticky-top post-list-right-body-style me-3">
+                <div class="mb-3">
+                    <small class="text-secondary">#Sports</small>
+                    <p class="mb-1 fw-semibold">India secures thrilling win in Test Series</p>
+                    <small class="text-secondary">89.7K Notes</small>
+                </div>
+
+                <div class="mb-3">
+                    <small class="text-secondary">#History</small>
+                    <p class="mb-1 fw-semibold">Today marks 80 years since D-Day landings</p>
+                    <small class="text-secondary">11.2K Notes</small>
+                </div>
+
+                <div class="mb-3">
+                    <small class="text-secondary">#Tech</small>
+                    <p class="mb-1 fw-semibold">AI Doctor startup raises record funding</p>
+                    <small class="text-secondary">65.3K Notes</small>
+                </div>
+
+                <div>
+                    <small class="text-secondary">#Culture</small>
+                    <p class="mb-1 fw-semibold">Venice Film Festival opens with standing ovation</p>
+                    <small class="text-secondary">27.9K Notes</small>
+                </div>
             </div>
-            <!-- body-right-section-end -->
+            <!-- right-body-section-end -->
         </div>
     </div>
     <!-- body-section-end -->
-
-    <!-- footer-section-start -->
-
-    <!-- footer-section-start -->
-
 </body>
 
 </html>
