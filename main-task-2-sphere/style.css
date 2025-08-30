@@ -21,7 +21,6 @@ body {
     font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
     overflow-x: hidden;
 }
-
 /* body-end */
 
 /* common-style-start */
@@ -165,47 +164,57 @@ body {
 /* features-section-section-start */
 .features-card-style {
     color: var(--text-color-primary);
+    min-height: 400px;
     transition: transform 0.3s ease;
 }
+
 
 .features-card-style:hover {
     transform: translateY(-5px);
 }
+
+.modal-body {
+    background-color: var(--bg-color-secondary);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(15px);
+    border: var(--border-color-primary) solid 1px;
+}
+
+.modal-content {
+    background-color: var(--bg-color-secondary);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(15px);
+    border: var(--border-color-primary) solid 1px;
+    border-radius: 20px;
+}
+
+
 
 /* features-section-section-end */
 
 /* home-page-style-end */
 
 
-/*post-page-style-start*/
-
-/* 1) Remove any existing forcing of full-height / hidden overflow that breaks sticky */
+/* profile-post-page-style-start*/
 .post-page-left-body-style,
 .post-page-right-body-style {
-    /* allow normal flow, don't clip children */
-    height: auto !important;
-    min-height: 0 !important;
-    overflow: visible !important;
+    height: auto ;
+    min-height: 0 ;
+    overflow: visible ;
 }
 
-/* 2) Sticky wrapper class — apply to the inner sidebar container */
 .sidebar-sticky {
     position: sticky;
     top: 1rem;
-    /* adjust offset so items won't hide under header */
     align-self: flex-start;
-    /* prevent flex stretching pushing it */
     z-index: 10;
-    /* keep above other content while scrolling */
 }
 
-/* 3) Ensure row/container do not create a new scroll context */
 .container-fluid,
 .row {
-    overflow: visible !important;
+    overflow: visible;
 }
 
-/* 4) Small smoothing for bootstrap collapse (optional) */
 .collapsing {
     transition: height .22s ease;
 }
@@ -286,60 +295,17 @@ body {
     max-height: 400px;
     object-fit: cover;
 }
-/* post-page-middle-body-style-end */
 
-/* post-page-right-body-style-start */
-
-/* post-page-right-body-style-end */
-
-/* post-page-style-start*/
-
-
-
-/*profile-page-style-start*/
-
-.profile-page-body-row {
-    margin-left: 3%;
-    margin-right: 0%;
-}
-
-.profile-page-left-body-style,
-.profile-page-right-body-style {
-    height: 100vh;
-    overflow: hidden;
-}
-
-/* profile-page-left-body-style-start */
-.profile-page-left-body-style {
-    margin-bottom: 30px;
-}
-
-.profile-page-left-body-tab-style {
-    margin-right: auto;
+.user-name-hover{
+    display: inline;
     transition: transform 0.3s ease;
 }
 
-.profile-page-left-body-tab-style>i,
-.profile-page-left-body-tab-style>span {
-    font-size: 25px;
+.user-name-hover:hover{
+    transform: translateX(5px);
 }
 
-.profile-page-left-body-tab-style:hover {
-    transform: translateX(20px);
-}
-
-.profile-page-middle-body-style {
-    overflow-y: auto;
-}
-
-/* profile-page-left-body-style-end */
-
-/* profile-page-middle-body-style-start */
-.profile-page-middle-body-style {
-    height: auto;
-    overflow-y: auto;
-}
-
+/* profile-card-section-start */
 .profile-page-middle-body-card-style {
     background-color: transparent;
     border: var(--border-color-primary) solid 1px;
@@ -369,27 +335,80 @@ body {
     object-fit: cover;
     border: var(--border-color-primary) solid 2px;
 }
+/* profile-card-section-start */
 
-.profile-page-middle-body-notes-card-style {
+/* post-page-middle-body-style-end */
+
+/* post-page-right-body-style-start */
+
+/* post-page-right-body-style-end */
+
+/* profile-post-page-style-end*/
+
+
+
+/*profile-page-style-start*/
+
+/* .profile-page-body-row {
+    margin-left: 3%;
+    margin-right: 0%;
+}
+
+.profile-page-left-body-style,
+.profile-page-right-body-style {
+    height: 100vh;
+    overflow: hidden;
+} */
+
+/* profile-page-left-body-style-start */
+/* .profile-page-left-body-style {
+    margin-bottom: 30px;
+}
+
+.profile-page-left-body-tab-style {
+    margin-right: auto;
+    transition: transform 0.3s ease;
+}
+
+.profile-page-left-body-tab-style>i,
+.profile-page-left-body-tab-style>span {
+    font-size: 25px;
+}
+
+.profile-page-left-body-tab-style:hover {
+    transform: translateX(20px);
+}
+
+.profile-page-middle-body-style {
+    overflow-y: auto;
+} */
+
+/* profile-page-left-body-style-end */
+
+/* profile-page-middle-body-style-start */
+/* .profile-page-middle-body-style {
+    height: auto;
+    overflow-y: auto;
+} */
+
+
+
+/* .profile-page-middle-body-notes-card-style {
     background-color: transparent;
     color: var(--text-color-primary);
     border: var(--border-color-primary) solid 1px;
     border-radius: 20px;
-}
+} */
 
-.profile-page-middle-body-notes-card-style>.card-img-bottom {
+/* .profile-page-middle-body-notes-card-style>.card-img-bottom {
     border: var(--border-color-primart) solid 1px;
-}
+} */
 
 /* profile-page-middle-body-style-end */
 
 /* profile-page-right-body-style-start */
 
 /* profile-page-right-body-style-end */
-
-
-
-/*profile-page-style-end*/
 
 
 

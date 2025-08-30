@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Post-list</title>
+    <title>profile-detail</title>
 
     <!-- bs--css-cdn-start -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -45,7 +45,7 @@
             <!-- left-body-section-start -->
             <div class="col-lg-2">
                 <!-- Toggle button (mobile only) -->
-                <div class="d-lg-none mb-2">
+                <div class="d-lg-none mb-2 mt-sm-2">
                     <button class="body-style text-white w-100 p-3" type="button" data-bs-toggle="collapse"
                         data-bs-target="#sidebarMenu" aria-expanded="false" aria-controls="sidebarMenu">
                         <i class="fa-solid fa-bars me-2"></i> Menu
@@ -83,34 +83,65 @@
 
             <!-- middle-body-section-start-->
             <div class="col-lg-6 col-12 post-page-middle-body-style body-style text-white mt-lg-3">
-                <div class="d-flex justify-content-evenly align-items-center ">
-                    <h1 class="fw-bold fs-3 text-center">For You</h1>
+                <h1 class="fw-bold display-6 text-center">Profile</h1>
+                <div class="card mb-3 profile-page-middle-body-card-style">
+                    <img src="./profile-page-assets/image-2.jpg" class="profile-page-middle-body-card-img-style"
+                        alt="...">
+                    <div class="profile-page-middle-body-section-profile-img-container">
+                        <img src="./profile-page-assets/profile-img.jpg" class="rounded-circle profile-img"
+                            alt="Profile Image">
+                    </div>
+                    <div class="card-body mt-5">
+                        <div class=" mt-5 mb-5 d-flex justify-content-between align-items-center">
+                            <div class="text-center fw-bolder fs-4">
+                                <h4>Allies</h4>
+                                <span>942</span>
+                            </div>
+                            <div class="text-center fw-bolder fs-4">
+                                <h4>Paths</h4>
+                                <span>315</span>
+                            </div>
+                            <div class="text-center fw-bolder fs-4">
+                                <h4>Notes</h4>
+                                <span>3</span>
+                            </div>
+                        </div>
+                        <h5 class="card-title">Ethan Clarke</h5>
+                        <span class="fs-6"><a href="#" class="text-decoration-none text-white">@ethan_clarke</a></span>
+                        <p class="card-text mt-2">Chronicler of hidden towns, winding railways,
+                            and the people who
+                            give places their soul. Writing to inspire journeys that matter.</p>
+                        <p class="card-text">Dublin, Ireland</p>
+                        <p class="card-text text-center"><small class="text-secondary">Joined: March 2020</small></p>
+                    </div>
                 </div>
+                <h1 class="text-center display-6">Notes</h1>
                 <div class="card post-page-middle-body-notes-card-style mb-3 mb-sm-3">
                     <div class="card-body">
                         <div
                             class="text-center card-style post-page-middle-body-notes-card--img-style d-flex justify-content-between align-content-center">
                             <div class="img-user-name">
-                                <img src="./post-list-page-assets/profile-1.png" class="object-fit-cover" alt="...">
-                                <span class="ms-2"><a href="#" class="text-decoration-none text-white user-name-hover">@nytimes</a></span>
+                                <img src="./profile-page-assets/profile-img.jpg" class="object-fit-cover" alt="...">
+                                <span class="ms-2"><a href=""
+                                        class="text-decoration-none text-white user-name-hover">@ethan_clarke</a></span>
                             </div>
                             <div class="pt-2">
-                                <p class="card-text text-white"><small class="text-secondary">Noted on 30 Aug , 2025</small></p>
+                                <p class="card-text text-white"><small class="text-secondary">Noted on 30 Aug,
+                                        2025</small></p>
                             </div>
                         </div>
                         <hr>
-                        <p class="card-text">Breaking News: A federal appeals court ruled that many of President Trump’s
-                            most punishing tariffs are illegal. But the judges delayed the implementation of their order
-                            until October to grant the administration time to seek review by the Supreme Court.</p>
+                        <p class="card-text">Donald Trump reportedly has not been seen in days, with no public
+                            appearances scheduled this weekend.</p>
                     </div>
-                    <img src="./post-list-page-assets/post-1.jpg" class="card-img-bottom object-fit-cover" alt="...">
+                    <img src="./profile-page-assets/post-3.jpg" class="card-img-bottom object-fit-cover" alt="...">
                     <div
                         class="d-flex justify-content-between align-items-center px-4 mb-3 mt-3 post-page-middle-body-notes-card-icon-style">
                         <div class="d-flex justify-content-evenly align-items-center gap-3 icon-middle-body">
-                            <div> <i class="fa-solid fa-comments me-1"></i><span>196</span>
+                            <div> <i class="fa-solid fa-comments me-1"></i><span>2.7K</span>
                             </div>
-                            <div><i class="fa-solid fa-share me-1"></i><span>36</span></div>
-                            <div><i class="fa-solid fa-star me-1"></i><span>556</span></div>
+                            <div><i class="fa-solid fa-share me-1"></i><span>3.7K</span></div>
+                            <div><i class="fa-solid fa-star me-1"></i><span>30K</span></div>
                         </div>
                     </div>
                 </div>
@@ -119,44 +150,26 @@
                         <div
                             class="text-center card-style post-page-middle-body-notes-card--img-style d-flex justify-content-between align-content-center">
                             <div class="img-user-name">
-                                <img src="./post-list-page-assets/profile-2.jpg" class="object-fit-cover" alt="...">
-                                <span class="ms-2"><a href="" class="text-decoration-none text-white user-name-hover">@chadwickboseman</a></span>
+                                <img src="./profile-page-assets/profile-img.jpg" class="object-fit-cover" alt="...">
+                                <span class="ms-2"><a href="#"
+                                        class="text-decoration-none text-white user-name-hover">@ethan_clarke</a></span>
                             </div>
                             <div class="pt-2">
-                                <p class="card-text text-white"><small class="text-secondary">Noted on Aug 29, 2020</small></p>
+                                <p class="card-text text-white"><small class="">Noted on Aug 30, 2025</small></p>
                             </div>
                         </div>
                         <hr>
-                        <p class="card-text">
-                            It is with immeasurable grief that we confirm the
-                            passing of Chadwick Boseman.
-                            Chadwick was diagnosed with stage Ill colon
-                            cancer in 2016, and battled with it these last 4
-                            years as it progressed to stage IV.
-                            A true fighter, Chadwick persevered through it
-                            all, and brought you many of the films you have
-                            come to love so much. From Marshall to Da 5
-                            Bloods, August Wilson's Ma Rainey's Black
-                            Bottom and several more, all were filmed
-                            during and between countless surgeries and
-                            chemotherapy.
-                            It was the honor of his career to bring
-                            King T 'Challa to life in Black Panther.
-                            He died in his home, with his wife and family by
-                            his side.
-                            The family thanks you for your love and
-                            prayers, and asks that you continue to respect
-                            their privacy during this difficult time.</p>
+                        <p class="card-text">Russia launches 'massive' attack on Ukraine, as Kyiv hits oil refineries
+                        </p>
                     </div>
-                    <img src="./post-list-page-assets/post-2.jpg"
-                        class="post-page-middle-body-notes-card-post-img-style" alt="...">
+                    <img src="./profile-page-assets/post-2.jpg" class="card-img-bottom object-fit-cover" alt="...">
                     <div
                         class="d-flex justify-content-between align-items-center px-4 mb-3 mt-3 post-page-middle-body-notes-card-icon-style">
                         <div class="d-flex justify-content-evenly align-items-center gap-3 icon-middle-body">
-                            <div> <i class="fa-solid fa-comments me-1"></i><span>196K</span>
+                            <div> <i class="fa-solid fa-comments me-1"></i><span>6</span>
                             </div>
-                            <div><i class="fa-solid fa-share me-1"></i><span>55K</span></div>
-                            <div><i class="fa-solid fa-star me-1"></i><span>0K</span></div>
+                            <div><i class="fa-solid fa-share me-1"></i><span>16</span></div>
+                            <div><i class="fa-solid fa-star me-1"></i><span>100</span></div>
                         </div>
                     </div>
                 </div>
@@ -165,103 +178,12 @@
                         <div
                             class="text-center card-style post-page-middle-body-notes-card--img-style d-flex justify-content-between align-content-center">
                             <div class="img-user-name">
-                                <img src="./post-list-page-assets/profile-3.jpg" class="object-fit-cover" alt="...">
-                                <span class="ms-2"><a href="" class="text-decoration-none text-white user-name-hover">@elonmusk</a></span>
+                                <img src="./profile-page-assets/profile-img.jpg" class="object-fit-cover" alt="...">
+                                <span class="ms-2"><a href=""
+                                        class="text-decoration-none text-white user-name-hover">@john_watson</a></span>
                             </div>
                             <div class="pt-2">
-                                <p class="card-text text-white"><small class="text-secondary">Noted on Jul 15, 2024</small></p>
-                            </div>
-                        </div>
-                        <hr>
-                        <p class="card-text">The New York Times just published this about Trump today.
-
-                            They are truly callous and despicable human beings. Not a shred of empathy.</p>
-                    </div>
-                    <img src="./post-list-page-assets/post-3.jpg" class="card-img-bottom object-fit-cover" alt="...">
-                    <div
-                        class="d-flex justify-content-between align-items-center px-4 mb-3 mt-3 post-page-middle-body-notes-card-icon-style">
-                        <div class="d-flex justify-content-evenly align-items-center gap-3 icon-middle-body">
-                            <div> <i class="fa-solid fa-comments me-1"></i><span>46K</span>
-                            </div>
-                            <div><i class="fa-solid fa-share me-1"></i><span>86K</span></div>
-                            <div><i class="fa-solid fa-star me-1"></i><span>556K</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card post-page-middle-body-notes-card-style mb-3 mb-sm-3">
-                    <div class="card-body">
-                        <div
-                            class="text-center card-style post-page-middle-body-notes-card--img-style d-flex justify-content-between align-content-center">
-                            <div class="img-user-name">
-                                <img src="./post-list-page-assets/profile-4.jpg" class="object-fit-cover" alt="...">
-                                <span class="ms-2"><a href="" class="text-decoration-none text-white user-name-hover">@F1</a></span>
-                            </div>
-                            <div class="pt-2">
-                                <p class="card-text text-white"><small class="text-secondary">Noted on 25 Aug, 2025</small></p>
-                            </div>
-                        </div>
-                        <hr>
-                        <p class="card-text">
-                            VAMOOOOS CHECO!!!! 🙌
-
-                            The Mexican is your
-                            @salesforce
-                            Driver Of The Day! 🎉
-
-                            From a pit-lane start to a points-finish, take a bow
-                            @SChecoPerez
-                            ! 👏👏👏
-
-                            #AusGP #F1
-                            @redbullracing</p>
-                    </div>
-                    <img src="./post-list-page-assets/post-4.png" class="card-img-bottom object-fit-cover" alt="...">
-                    <div
-                        class="d-flex justify-content-between align-items-center px-4 mb-3 mt-3 post-page-middle-body-notes-card-icon-style">
-                        <div class="d-flex justify-content-evenly align-items-center gap-3 icon-middle-body">
-                            <div> <i class="fa-solid fa-comments me-1"></i><span>846</span>
-                            </div>
-                            <div><i class="fa-solid fa-share me-1"></i><span>8.7K</span></div>
-                            <div><i class="fa-solid fa-star me-1"></i><span>68K</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card post-page-middle-body-notes-card-style mb-3 mb-sm-3">
-                    <div class="card-body">
-                        <div
-                            class="text-center card-style post-page-middle-body-notes-card--img-style d-flex justify-content-between align-content-center">
-                            <div class="img-user-name">
-                                <img src="./post-list-page-assets/profile-3.jpg" class="object-fit-cover" alt="...">
-                                <span class="ms-2"><a href="" class="text-decoration-none text-white user-name-hover">@elonmusk</a></span>
-                            </div>
-                            <div class="pt-2">
-                                <p class="card-text text-white"><small class="text-secondary">Noted on Mar 28, 2023</small></p>
-                            </div>
-                        </div>
-                        <hr>
-                        <p class="card-text">I’m old enough to remember</p>
-                    </div>
-                    <img src="./post-list-page-assets/post-5.jpg" class="card-img-bottom object-fit-cover" alt="...">
-                    <div
-                        class="d-flex justify-content-between align-items-center px-4 mb-3 mt-3 post-page-middle-body-notes-card-icon-style">
-                        <div class="d-flex justify-content-evenly align-items-center gap-3 icon-middle-body">
-                            <div> <i class="fa-solid fa-comments me-1"></i><span>196</span>
-                            </div>
-                            <div><i class="fa-solid fa-share me-1"></i><span>36</span></div>
-                            <div><i class="fa-solid fa-star me-1"></i><span>556</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card post-page-middle-body-notes-card-style mb-3 mb-sm-3">
-                    <div class="card-body">
-                        <div
-                            class="text-center card-style post-page-middle-body-notes-card--img-style d-flex justify-content-between align-content-center">
-                            <div class="img-user-name">
-                                <img src="./post-list-page-assets/profile-6.jpg" class="object-fit-cover" alt="...">
-                                <span class="ms-2"><a href="" class="text-decoration-none text-white user-name-hover">@john_watson</a></span>
-                            </div>
-                            <div class="pt-2">
-                                <p class="card-text text-white"><small class="text-secondary">Noted on Aug 30, 2022</small></p>
+                                <p class="card-text text-white"><small class="">Noted on Aug 30, 2022</small></p>
                             </div>
                         </div>
                         <hr>
@@ -270,7 +192,7 @@
                             apartheid. His release became a symbol of resilience, forgiveness, and the belief that
                             justice can outlast oppression.</p>
                     </div>
-                    <img src="./post-list-page-assets/post-6.jpg" class="card-img-bottom object-fit-cover" alt="...">
+                    <img src="./profile-page-assets/post-img-1.jpg" class="card-img-bottom object-fit-cover" alt="...">
                     <div
                         class="d-flex justify-content-between align-items-center px-4 mb-3 mt-3 post-page-middle-body-notes-card-icon-style">
                         <div class="d-flex justify-content-evenly align-items-center gap-3 icon-middle-body">
