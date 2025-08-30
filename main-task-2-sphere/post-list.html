@@ -40,10 +40,10 @@
 <body>
 
     <!-- body-section-start -->
-    <div class="container-fluid my-5">
-        <div class="row gap-4 profile-page-body-row">
+    <div class="container-fluid mx-auto">
+        <div class="row gap-4 post-page-body-row">
             <!-- left-body-section-start -->
-            <div class="col-lg-2 col--12 sticky-lg-top profile-page-left-body-style body-style">
+            <div class="col-lg-2">
                 <!-- Toggle button (mobile only) -->
                 <div class="d-lg-none mb-2">
                     <button class="body-style text-white w-100 p-3" type="button" data-bs-toggle="collapse"
@@ -51,57 +51,216 @@
                         <i class="fa-solid fa-bars me-2"></i> Menu
                     </button>
                 </div>
+
                 <!-- Sidebar menu (shared for all screens) -->
                 <div id="sidebarMenu"
-                    class="collapse d-lg-flex  flex-column gap-2 gap-lg-5  side-box p-2 p-lg-3 h-auto h-lg-100 text-white ">
-                    <div class="profile-page-left-body-tab-style"><span class="fw-bolder fs-4">SPHERE</span>
+                    class="collapse d-lg-flex flex-column gap-2 gap-lg-4 side-box p-2 p-lg-3 h-auto h-lg-auto text-white body-style post-page-left-body-style sidebar-sticky">
+                    <div class="post-page-left-body-tab-style"><span class="fw-bolder fs-4">SPHERE</span></div>
+                    <div class="post-page-left-body-tab-style"><i class="fa-solid fa-house me-2"></i><span>Home</span>
                     </div>
-                    <div class="profile-page-left-body-tab-style"><i
-                            class="fa-solid fa-house me-2"></i><span>Home</span>
+                    <div class="post-page-left-body-tab-style"><i
+                            class="fa-solid fa-newspaper me-2"></i><span>Explore</span></div>
+                    <div class="post-page-left-body-tab-style"><i class="fa-solid fa-bell"></i><span>Notification</span>
                     </div>
-                    <div class="profile-page-left-body-tab-style"><i
-                            class="fa-solid fa-newspaper me-2"></i><span>Explore</span>
+                    <div class="post-page-left-body-tab-style"><i
+                            class="fa-solid fa-message me-2"></i><span>Message</span></div>
+                    <div class="post-page-left-body-tab-style"><i class="fa-solid fa-bookmark"></i><span>Bookmark</span>
                     </div>
-                    <div class="profile-page-left-body-tab-style"><i class="fa-solid fa-bell"></i><span>
-                            Notification</span>
+                    <div class="post-page-left-body-tab-style"><i
+                            class="fa-solid fa-people-group me-2"></i><span>Communities</span></div>
+                    <div class="post-page-left-body-tab-style"><i class="fa-solid fa-user me-2"></i><span>Profile</span>
                     </div>
-                    <div class="profile-page-left-body-tab-style"><i
-                            class="fa-solid fa-message me-2"></i><span>Message</span>
-                    </div>
-                    <div class="profile-page-left-body-tab-style"><i
-                            class="fa-solid fa-bookmark"></i><span>Bookmark</span>
-                    </div>
-                    <div class="profile-page-left-body-tab-style"><i
-                            class="fa-solid fa-people-group me-2"></i><span>Communities</span>
-                    </div>
-                    <div class="profile-page-left-body-tab-style"><i
-                            class="fa-solid fa-user me-2"></i><span>Profile</span>
-                    </div>
-                    <div class="profile-page-left-body-tab-style"><i
-                            class="fa-solid fa-angles-right me-2"></i><span>More</span>
-                    </div>
-                    <div class="profile-page-left-body-tab-style"><i
-                            class="fa-solid fa-gear me-2"></i><span>Settings</span>
-                    </div>
-                    <div class="profile-page-left-body-tab-style"><i class="fa-solid fa-plus"></i><span>Post</span>
+                    <div class="post-page-left-body-tab-style"><i
+                            class="fa-solid fa-angles-right me-2"></i><span>More</span></div>
+                    <div class="post-page-left-body-tab-style"><i
+                            class="fa-solid fa-gear me-2"></i><span>Settings</span></div>
+                    <div class="post-page-left-body-tab-style"><i class="fa-solid fa-plus"></i><span>Post</span>
                     </div>
                 </div>
             </div>
             <!-- left-body-section-end -->
 
+
             <!-- middle-body-section-start-->
-            <div
-                class="col-lg-6 col-12 profile-page-middle-body-style body-style post-page-middle-body-style body-style text-white">
+            <div class="col-lg-6 col-12 post-page-middle-body-style body-style text-white">
                 <div class="d-flex justify-content-evenly align-items-center ">
                     <h1 class="fw-bold fs-3 text-center">For You</h1>
                 </div>
-                <div class="card profile-page-middle-body-notes-card-style post-page-middle-body-notes-card-style">
+                <div class="card post-page-middle-body-notes-card-style mb-3 mb-sm-3">
                     <div class="card-body">
                         <div
                             class="text-center card-style post-page-middle-body-notes-card--img-style d-flex justify-content-between align-content-center">
                             <div class="img-user-name">
-                                <img src="./post-list-page-assets/profile-1.jpg" class="object-fit-cover" alt="...">
-                                <span>john_watson</span>
+                                <img src="./post-list-page-assets/profile-1.png" class="object-fit-cover" alt="...">
+                                <span class="ms-2">@nytimes</span>
+                            </div>
+                            <div class="pt-2">
+                                <p class="card-text text-white"><small class="">Noted on 30 Aug , 2025</small></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="card-text">Breaking News: A federal appeals court ruled that many of President Trump’s
+                            most punishing tariffs are illegal. But the judges delayed the implementation of their order
+                            until October to grant the administration time to seek review by the Supreme Court.</p>
+                    </div>
+                    <img src="./post-list-page-assets/post-1.jpg" class="card-img-bottom object-fit-cover" alt="...">
+                    <div
+                        class="d-flex justify-content-between align-items-center px-4 mb-3 mt-3 post-page-middle-body-notes-card-icon-style">
+                        <div class="d-flex justify-content-evenly align-items-center gap-3 icon-middle-body">
+                            <div> <i class="fa-solid fa-comments me-1"></i><span>196</span>
+                            </div>
+                            <div><i class="fa-solid fa-share me-1"></i><span>36</span></div>
+                            <div><i class="fa-solid fa-star me-1"></i><span>556</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card post-page-middle-body-notes-card-style mb-3 mb-sm-3">
+                    <div class="card-body">
+                        <div
+                            class="text-center card-style post-page-middle-body-notes-card--img-style d-flex justify-content-between align-content-center">
+                            <div class="img-user-name">
+                                <img src="./post-list-page-assets/profile-2.jpg" class="object-fit-cover" alt="...">
+                                <span class="ms-2">@chadwickboseman</span>
+                            </div>
+                            <div class="pt-2">
+                                <p class="card-text text-white"><small class="">Noted on Aug 29, 2020</small></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="card-text">
+                            It is with immeasurable grief that we confirm the
+                            passing of Chadwick Boseman.
+                            Chadwick was diagnosed with stage Ill colon
+                            cancer in 2016, and battled with it these last 4
+                            years as it progressed to stage IV.
+                            A true fighter, Chadwick persevered through it
+                            all, and brought you many of the films you have
+                            come to love so much. From Marshall to Da 5
+                            Bloods, August Wilson's Ma Rainey's Black
+                            Bottom and several more, all were filmed
+                            during and between countless surgeries and
+                            chemotherapy.
+                            It was the honor of his career to bring
+                            King T 'Challa to life in Black Panther.
+                            He died in his home, with his wife and family by
+                            his side.
+                            The family thanks you for your love and
+                            prayers, and asks that you continue to respect
+                            their privacy during this difficult time.</p>
+                    </div>
+                    <img src="./post-list-page-assets/post-2.jpg"
+                        class="post-page-middle-body-notes-card-post-img-style" alt="...">
+                    <div
+                        class="d-flex justify-content-between align-items-center px-4 mb-3 mt-3 post-page-middle-body-notes-card-icon-style">
+                        <div class="d-flex justify-content-evenly align-items-center gap-3 icon-middle-body">
+                            <div> <i class="fa-solid fa-comments me-1"></i><span>196K</span>
+                            </div>
+                            <div><i class="fa-solid fa-share me-1"></i><span>55K</span></div>
+                            <div><i class="fa-solid fa-star me-1"></i><span>0K</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card post-page-middle-body-notes-card-style mb-3 mb-sm-3">
+                    <div class="card-body">
+                        <div
+                            class="text-center card-style post-page-middle-body-notes-card--img-style d-flex justify-content-between align-content-center">
+                            <div class="img-user-name">
+                                <img src="./post-list-page-assets/profile-3.jpg" class="object-fit-cover" alt="...">
+                                <span class="ms-2">@elonmusk
+                                </span>
+                            </div>
+                            <div class="pt-2">
+                                <p class="card-text text-white"><small class="">Noted on Jul 15, 2024</small></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="card-text">The New York Times just published this about Trump today.
+
+                            They are truly callous and despicable human beings. Not a shred of empathy.</p>
+                    </div>
+                    <img src="./post-list-page-assets/post-3.jpg" class="card-img-bottom object-fit-cover" alt="...">
+                    <div
+                        class="d-flex justify-content-between align-items-center px-4 mb-3 mt-3 post-page-middle-body-notes-card-icon-style">
+                        <div class="d-flex justify-content-evenly align-items-center gap-3 icon-middle-body">
+                            <div> <i class="fa-solid fa-comments me-1"></i><span>46K</span>
+                            </div>
+                            <div><i class="fa-solid fa-share me-1"></i><span>86K</span></div>
+                            <div><i class="fa-solid fa-star me-1"></i><span>556K</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card post-page-middle-body-notes-card-style mb-3 mb-sm-3">
+                    <div class="card-body">
+                        <div
+                            class="text-center card-style post-page-middle-body-notes-card--img-style d-flex justify-content-between align-content-center">
+                            <div class="img-user-name">
+                                <img src="./post-list-page-assets/profile-4.jpg" class="object-fit-cover" alt="...">
+                                <span class="ms-2">@F1</span>
+                            </div>
+                            <div class="pt-2">
+                                <p class="card-text text-white"><small class="">Noted 3 years ago</small></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="card-text">
+                            VAMOOOOS CHECO!!!! 🙌
+
+                            The Mexican is your
+                            @salesforce
+                            Driver Of The Day! 🎉
+
+                            From a pit-lane start to a points-finish, take a bow
+                            @SChecoPerez
+                            ! 👏👏👏
+
+                            #AusGP #F1
+                            @redbullracing</p>
+                    </div>
+                    <img src="./post-list-page-assets/post-4.png" class="card-img-bottom object-fit-cover" alt="...">
+                    <div
+                        class="d-flex justify-content-between align-items-center px-4 mb-3 mt-3 post-page-middle-body-notes-card-icon-style">
+                        <div class="d-flex justify-content-evenly align-items-center gap-3 icon-middle-body">
+                            <div> <i class="fa-solid fa-comments me-1"></i><span>846</span>
+                            </div>
+                            <div><i class="fa-solid fa-share me-1"></i><span>8.7K</span></div>
+                            <div><i class="fa-solid fa-star me-1"></i><span>68K</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card post-page-middle-body-notes-card-style mb-3 mb-sm-3">
+                    <div class="card-body">
+                        <div
+                            class="text-center card-style post-page-middle-body-notes-card--img-style d-flex justify-content-between align-content-center">
+                            <div class="img-user-name">
+                                <img src="./post-list-page-assets/profile-3.jpg" class="object-fit-cover" alt="...">
+                                <span class="ms-2">@elonmusk
+                                </span>
+                            </div>
+                            <div class="pt-2">
+                                <p class="card-text text-white"><small class="">Noted on Mar 28, 2023</small></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="card-text">I’m old enough to remember</p>
+                    </div>
+                    <img src="./post-list-page-assets/post-5.jpg" class="card-img-bottom object-fit-cover" alt="...">
+                    <div
+                        class="d-flex justify-content-between align-items-center px-4 mb-3 mt-3 post-page-middle-body-notes-card-icon-style">
+                        <div class="d-flex justify-content-evenly align-items-center gap-3 icon-middle-body">
+                            <div> <i class="fa-solid fa-comments me-1"></i><span>196</span>
+                            </div>
+                            <div><i class="fa-solid fa-share me-1"></i><span>36</span></div>
+                            <div><i class="fa-solid fa-star me-1"></i><span>556</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card post-page-middle-body-notes-card-style mb-3 mb-sm-3">
+                    <div class="card-body">
+                        <div
+                            class="text-center card-style post-page-middle-body-notes-card--img-style d-flex justify-content-between align-content-center">
+                            <div class="img-user-name">
+                                <img src="./post-list-page-assets/profile-5.jpg" class="object-fit-cover" alt="...">
+                                <span class="ms-2">@john_watson</span>
                             </div>
                             <div class="pt-2">
                                 <p class="card-text text-white"><small class="">Noted 3 years ago</small></p>
@@ -114,8 +273,9 @@
                             justice can outlast oppression.</p>
                     </div>
                     <img src="./profile-page-assets/post-img-1.jpg" class="card-img-bottom object-fit-cover" alt="...">
-                    <div class="d-flex justify-content-between align-items-center px-4 mb-3 mt-3">
-                        <div class="d-flex justify-content-evenly align-items-center gap-3">
+                    <div
+                        class="d-flex justify-content-between align-items-center px-4 mb-3 mt-3 post-page-middle-body-notes-card-icon-style">
+                        <div class="d-flex justify-content-evenly align-items-center gap-3 icon-middle-body">
                             <div> <i class="fa-solid fa-comments me-1"></i><span>196</span>
                             </div>
                             <div><i class="fa-solid fa-share me-1"></i><span>36</span></div>
@@ -128,7 +288,7 @@
 
             <!-- right-body-section-start-->
             <div
-                class="col-lg-3 d-none d-lg-flex flex-column  sticky-top profile-page-right-body-style body-style text-white p-3">
+                class="col-lg-3 d-none d-lg-flex flex-column post-page-right-body-style body-style text-white p-3 sidebar-sticky ">
                 <div class="d-flex my-3">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                     <button class="btn border-white rounded-5 text-white" type="submit">Search</button>
