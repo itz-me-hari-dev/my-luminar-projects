@@ -185,8 +185,9 @@ body {
 
 .home-modal-btn{
     border-radius: 20px;
-    width: 15%;
-    padding: 5px;
+    width: 100%;
+    max-width: 150px;
+    padding: 10px 20px;
     border: var(--border-color-primart) solid 1px;
     color: var(--bg-color-primary);
     font-size: 20px;
@@ -345,7 +346,7 @@ body {
 .profile-page-middle-body-section-profile-img-container {
     position: absolute;
     top: 20%;
-    left: 20%;
+    left: 50%;
     transform: translateX(-50%);
 }
 
@@ -385,6 +386,14 @@ body {
 /* post-page-right-body-style-end */
 
 /* profile-post-page-style-end*/
+
+
+
+/* profile-add-style-start */
+.profile-form{
+    max-width: 600px ; 
+}
+/* profile-add-style-end */
 
 
 
