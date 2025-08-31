@@ -42,7 +42,7 @@
     <!-- nav-section-start -->
     <nav class="navbar navbar-expand-lg">
         <div class="container px-5 nav-bar-style p-2 body-style">
-            <a class="navbar-brand" href="#">SPHERE</a>
+            <a class="navbar-brand" href="./index.html">SPHERE</a>
             <button class="navbar-toggler hamburger-nav" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -51,13 +51,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Explore</a>
+                        <a class="nav-link" href="./post-list.html">Explore</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-disabled="true">Profile</a>
+                        <a class="nav-link" href="./profile-detail.html">Profile</a>
                     </li>
                 </ul>
             </div>
@@ -114,12 +114,16 @@
     <!-- Hero Section-carousel-section-start -->
 
     <!-- model-section-start -->
-    <div class="container body-style my-5 ">
+    <div class="container body-style my-5 text-center text-white py-5">
+        <h2 class="display-4 fw-bold">Welcome Back</h2>
+        <p class="fs-5">Please login to continue accessing your account.</p>
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop-1">
+        <button type="button" class="home-modal-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop-1">
             Login
         </button>
-        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop-2">
+        <h2 class="mt-5 display-4 fw-bold">Join Us Today </h2>
+        <p class="fs-5">Create an account to explore all features and be part of our community.</p>
+        <button type="button" class="home-modal-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop-2">
             Sign in
         </button>
     </div>
@@ -133,7 +137,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form class="mt-5">
+                    <form class="mt-1" action="./post-list.html" method="get">
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email address or Phone number </label>
                             <input type="email number" class="form-control" id="exampleInputEmail1"
@@ -161,6 +165,11 @@
                             <button type="button" class="btn btn-outline-light px-4 py-2 btn-social-login"><i
                                     class="fa-brands fa-windows"></i></button>
                         </div>
+                        <div>
+                            <p class="text-center mt-4 text-white">Don't have an account? <a href="#"
+                                    class=" text-white text-center" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop-2" data-bs-dismiss="modal">Sign in</a></p>
+                        </div>
                     </form>
                 </div>
                 <div class="modal-footer mx-auto">
@@ -178,7 +187,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form class="mt-5">
+                    <form class="mt-1" action="./profile-add.html" method="get">
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Name</label>
                             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
@@ -200,7 +209,7 @@
                                 placeholder="Enter Your Password To Comfirm">
                         </div>
                         <div class="sign-in-button d-flex justify-content-center align-items-center mt-5">
-                            <button type="submit" class="btn-login p-2">Sign in</button>
+                            <button type="submit" class="btn-sign-up p-2">Sign in</button>
                         </div>
                         <div class="text-center mt-3">
                             <span class="text-white login-span">Or Sign In With</span>
@@ -212,6 +221,11 @@
                                     class="fa-brands fa-apple"></i></button>
                             <button type="button" class="btn btn-outline-light px-4 py-2 btn-social-login"><i
                                     class="fa-brands fa-windows"></i></button>
+                        </div>
+                        <div>
+                            <p class="text-center mt-4 text-white">Already Have a Account?<a href="#"
+                                    class="text-white text-center" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop-1" data-bs-dismiss="modal">Login</a></p>
                         </div>
                     </form>
                 </div>
@@ -287,10 +301,9 @@
             <div class="col-lg-6 col-sm-12 mb-3">
                 <h6 class="fw-bold text-white">Quick Links</h6>
                 <ul class="list-unstyled">
-                    <li><a href="#" class="text-white text-decoration-none">Home</a></li>
-                    <li><a href="#" class="text-white text-decoration-none">Explore</a></li>
-                    <li><a href="#" class="text-white text-decoration-none">Messages</a></li>
-                    <li><a href="#" class="text-white text-decoration-none">Profile</a></li>
+                    <li><a href="./index.html" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="./post-list.html" class="text-white text-decoration-none">Explore</a></li>
+                    <li><a href="./profile-add.html" class="text-white text-decoration-none">Profile</a></li>
                 </ul>
             </div>
 
