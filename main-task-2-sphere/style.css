@@ -33,6 +33,22 @@ body {
     box-shadow: 0 0 10px var(--shadow-color-primary);
 }
 
+.modal-body {
+    /* background-color: var(--bg-color-secondary); */
+    background-color: #2A2A2A;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    border: var(--border-color-primary) solid 1px;
+}
+
+.modal-content {
+    /* background-color: var(--bg-color-secondary); */
+    background-color: #2A2A2A;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    border: var(--border-color-primary) solid 1px;
+    border-radius: 20px;
+}
 /* common-style-end */
 
 
@@ -166,23 +182,6 @@ body {
 /* carousel-style-section-start */
 
 /* model-style-section-start */
-.modal-body {
-    /* background-color: var(--bg-color-secondary); */
-    background-color: #2A2A2A;
-    backdrop-filter: blur(50px);
-    -webkit-backdrop-filter: blur(50px);
-    border: var(--border-color-primary) solid 1px;
-}
-
-.modal-content {
-    /* background-color: var(--bg-color-secondary); */
-    background-color: #2A2A2A;
-    backdrop-filter: blur(50px);
-    -webkit-backdrop-filter: blur(50px);
-    border: var(--border-color-primary) solid 1px;
-    border-radius: 20px;
-}
-
 .home-modal-btn{
     border-radius: 20px;
     width: 100%;
@@ -357,6 +356,24 @@ body {
     border: var(--border-color-primary) solid 2px;
 }
 /* profile-card-section-start */
+
+/* profile-deatils-model-style-start */
+.profile-detail-modal-btn{
+    border-radius: 20px;
+    width: 100%;
+    max-width: 150px;
+    padding: 5px 10px;
+    border: var(--border-color-primart) solid 1px;
+    color: var(--bg-color-primary);
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+.profile-detail-modal-btn:hover {
+    background-color: var(--bg-color-secondary);
+    border: var(--border-color-primary) solid 1px;
+    color: var(--text-color-primary);
+}
+/* profile-deatils-model-style-end */
 
 /* post-page-middle-body-style-end */
 
