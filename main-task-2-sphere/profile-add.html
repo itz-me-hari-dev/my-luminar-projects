@@ -35,10 +35,10 @@
 
 <body>
     <div class="d-flex justify-content-center align-items-center min-vh-100">
-        <div class="container-lg container-fluid body-style m-5 p-5">
+        <div class="container-lg container-fluid body-style m-5 p-2">
             <h1 class="text-center text-white fw-bold">SPHERE</h1>
             <h3 class="text-center text-white">Add Your Details To Complete</h3>
-            <form class="w-sm-100 w-md-75 w-lg-25 mx-auto mt-5 profile-form">
+            <form class="w-sm-100 w-md-75 w-lg-25 mx-auto mt-3 profile-form" action="./profile-detail.html">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">User Name</label>
                     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
@@ -61,11 +61,18 @@
                     <input type="text" class="form-control" id="exampleInputPassword1"
                         placeholder="Enter Your Location">
                 </div>
-                <div class="d-flex justify-content-center">
-                    <button type="submit" class="rounded-5 py-2 px-3">Submit</button>
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Select a Profile Picture</label>
+                    <input class="form-control" type="file" id="formFile" accept="image/*">
+                </div>
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Select a Cover Picture</label>
+                    <input class="form-control" type="file" id="formFile" accept="image/*">
+                </div>
+                <div class="d-flex justify-content-center mt-5">
+                    <button type="submit" class="rounded-5 py-2 px-3">Save To Continue</button>
                 </div>
             </form>
-
         </div>
     </div>
 </body>

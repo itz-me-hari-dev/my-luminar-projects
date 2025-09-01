@@ -45,11 +45,28 @@
             <!-- left-body-section-start -->
             <div class="col-lg-2">
                 <!-- Toggle button (mobile only) -->
-                <div class="d-lg-none mb-2 mt-sm-2">
-                    <button class="body-style text-white w-100 p-3" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#sidebarMenu" aria-expanded="false" aria-controls="sidebarMenu">
-                        <i class="fa-solid fa-bars me-2"></i> Menu
-                    </button>
+                <div class="d-lg-none mb-2 mt-2">
+                    <div class="d-flex justify-content-between align-items-center p-2 body-style text-white">
+
+                        <!-- Left: Menu -->
+                        <button class="btn text-white" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#sidebarMenu" aria-expanded="false" aria-controls="sidebarMenu">
+                            <i class="fa-solid fa-bars me-2"></i> Menu
+                        </button>
+
+                        <!-- Right: Search Icon -->
+                        <button class="btn text-white" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#searchBar" aria-expanded="false" aria-controls="searchBar">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+
+                    <!-- Hidden Search Bar -->
+                    <div id="searchBar" class="collapse mt-2">
+                        <div class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Sidebar menu (shared for all screens) -->
@@ -126,7 +143,7 @@
 
             <!-- middle-body-section-start-->
             <div class="col-lg-6 col-12 post-page-middle-body-style body-style text-white mt-lg-3">
-                <h1 class="fw-bold display-6 text-center">Profile</h1>
+                <h1 class="fw-bold display-6 text-center pt-3">Your Profile</h1>
                 <div class="card mb-3 profile-page-middle-body-card-style">
                     <img src="./profile-page-assets/image-2.jpg" class="profile-page-middle-body-card-img-style"
                         alt="...">
@@ -149,12 +166,20 @@
                                 <span>3</span>
                             </div>
                         </div>
-                        <h5 class="card-title">Ethan Clarke</h5>
-                        <span class="fs-6"><a href="./profile-detail.html" class="text-decoration-none text-white">@ethan_clarke</a></span>
+                        <h5 class="card-title"></h5>
+                        <span class="fs-6"><a href="./profile-detail.html"
+                                class="text-decoration-none text-white">@ethan_clarke</a></span>
                         <p class="card-text mt-2">Chronicler of hidden towns, winding railways,
                             and the people who
                             give places their soul. Writing to inspire journeys that matter.</p>
                         <p class="card-text">Dublin, Ireland</p>
+                        <div>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Launch static backdrop modal
+                            </button>
+                        </div>
                         <p class="card-text text-center"><small class="text-secondary">Joined: March 2020</small></p>
                     </div>
                 </div>
@@ -247,6 +272,59 @@
                     </div>
                 </div>
             </div>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 text-white text-center w-100" id="staticBackdropLabel">Edit
+                                Deatils</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="w-sm-100 w-md-75 w-lg-25 mx-auto mt-3 profile-form" action="./profile-detail.html">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">User Name</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Enter Your Name" value="ethan_clarke">
+                                </div>
+                                <div>
+                                    <label for="exampleInputEmail1" class="form-label">About</label>
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" placeholder="" id="floatingTextarea2"
+                                            style="height: 100px">
+                                        </textarea>
+                                        <label for="floatingTextarea2">Write About Yourself</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Date of Birth</label>
+                                    <input type="date" class="form-control" id="exampleInputPassword1" value="2003-06-08">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-check-label" for="exampleCheck1">Location</label>
+                                    <input type="text" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Enter Your Location" value="Dublin, Ireland">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="formFile" class="form-label">Select a Profile Picture</label>
+                                    <input class="form-control" type="file" id="formFile" accept="image/*">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="formFile" class="form-label">Select a Cover Picture</label>
+                                    <input class="form-control" type="file" id="formFile" accept="image/*">
+                                </div>
+                                <div class="d-flex justify-content-center mt-5">
+                                    <button type="submit" class="rounded-5 py-2 px-3">Save Changes</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- middle-body-section-end -->
 
             <!-- right-body-section-start-->
@@ -254,7 +332,7 @@
                 class="col-lg-3 d-none d-lg-flex flex-column post-page-right-body-style body-style text-white p-3 sidebar-sticky ">
                 <div class="d-flex my-3">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn border-white rounded-5 text-white" type="submit">Search</button>
+                    <!-- <button class="btn border-white rounded-5 text-white" type="submit">Search</button> -->
                 </div>
                 <hr>
                 <h5 class="fw-bold mb-3">Trending Now</h5>

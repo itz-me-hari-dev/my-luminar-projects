@@ -45,11 +45,28 @@
             <!-- left-body-section-start -->
             <div class="col-lg-2">
                 <!-- Toggle button (mobile only) -->
-                <div class="d-lg-none mb-2">
-                    <button class="body-style text-white w-100 p-3" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#sidebarMenu" aria-expanded="false" aria-controls="sidebarMenu">
-                        <i class="fa-solid fa-bars me-2"></i> Menu
-                    </button>
+                <div class="d-lg-none mb-2 mt-2">
+                    <div class="d-flex justify-content-between align-items-center p-2 body-style text-white">
+
+                        <!-- Left: Menu -->
+                        <button class="btn text-white" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#sidebarMenu" aria-expanded="false" aria-controls="sidebarMenu">
+                            <i class="fa-solid fa-bars me-2"></i> Menu
+                        </button>
+
+                        <!-- Right: Search Icon -->
+                        <button class="btn text-white" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#searchBar" aria-expanded="false" aria-controls="searchBar">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+
+                    <!-- Hidden Search Bar -->
+                    <div id="searchBar" class="collapse mt-2">
+                        <div class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Sidebar menu (shared for all screens) -->
@@ -126,9 +143,7 @@
 
             <!-- middle-body-section-start-->
             <div class="col-lg-6 col-12 post-page-middle-body-style body-style text-white mt-lg-3 mb-5">
-                <div class="d-flex justify-content-evenly align-items-center ">
-                    <h1 class="fw-bold fs-3 text-center">For You</h1>
-                </div>
+                <h1 class="fw-bold display-6 text-center pt-3">For You</h1>
                 <div class="card post-page-middle-body-notes-card-style mb-3 mb-sm-3">
                     <div class="card-body">
                         <div
@@ -344,7 +359,7 @@
                 class="col-lg-3 d-none d-lg-flex flex-column post-page-right-body-style body-style text-white p-3 sidebar-sticky ">
                 <div class="d-flex my-3 right-body-search-bar-style">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="text-white btn-search" type="submit">Search</button>
+                    <!-- <button class="text-white btn-search" type="submit">Search</button> -->
                 </div>
                 <hr>
                 <h5 class="fw-bold mb-3">Trending Now</h5>
