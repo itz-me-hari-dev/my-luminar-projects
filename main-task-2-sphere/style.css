@@ -38,15 +38,17 @@ body {
     background-color: #2A2A2A;
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
-    border: var(--border-color-primary) solid 1px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.modal-body::-webkit-scrollbar {
+    display: none;
 }
 
 .modal-content {
-    /* background-color: var(--bg-color-secondary); */
     background-color: #2A2A2A;
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
-    border: var(--border-color-primary) solid 1px;
     border-radius: 20px;
 }
 /* common-style-end */
@@ -302,7 +304,8 @@ body {
 }
 
 .post-page-middle-body-notes-card-icon-style >.icon-middle-body {
-    transition: transform 0.5s ease;
+    transition: transform 1s ease;
+    cursor: pointer;
 
 }
 
