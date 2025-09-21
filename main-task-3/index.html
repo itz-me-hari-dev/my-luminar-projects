@@ -38,33 +38,25 @@
 
 <body>
     <!-- nav-section-start -->
-    <nav class="navbar navbar-expand-lg bg-transparent">
-        <div class="container">
-            <a class="navbar-brand" href="#">JOBLY</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ELEVATEHIRE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse ps-5" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Find Job</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-disabled="true">About</a>
-                    </li>
-                </ul>
-                <div class="d-flex gap-3">
-                    <form>
-                        <button type="button" class="btn btn-primary rounded-1">Login</button>
-                    </form>
-                    <form>
-                        <button type="button" class="btn btn-outline-primary rounded-1">Sign Up</button>
-                    </form>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav gap-2">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Vacancies</a>
+                    <a class="nav-link" href="#">Comapany Review</a>
+                    <a class="nav-link" href="#">Community</a>
+                    <div class="nav-selector">
+                        <select class="border-0 bg-transparent text-muted" aria-label="Default select example">
+                            <option selected>Find a Job</option>
+                            <option value="1">Hire</option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </div>
@@ -72,39 +64,59 @@
     <!-- nav-section-end -->
 
     <!-- hero-section-start -->
-    <div class="container-fluid hero-image-container-style mt-2 position-relative">
-        <img src="./assets/home-image-3.jpg" alt="" class="object-fit-cover hero-image-style">
-        <div class="position-absolute top-50 start-50 translate-middle">
-            <h1 class="text-center text-white display-1 fw-bold">Find Your Dream</h1>
-            <h1 class="text-center text-white display-1 fw-bold">Job There</h1>
-            <div class="w-auto h-auto bg-white">
+    <div class="conatiner-fluid hero-bg-style w-100 d-flex justify-content-between p-5">
+        <div class="w-50 min-vh-100 p-5">
+            <h1 class="display-3">Find Your Dream Job</h1>
+            <h2 class="fw-normal">Connecting talented professionals</h2>
+            <h2>with top employers.</h2>
+            <div class="d-flex gap-5 py-5">
                 <form action="">
-                    <div class="row gap-0">
-                        <div class="col">
-                            <select class="form-select border-0" aria-label="Default select example">
-                                <option selected>Your Location</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
-                        <div class="col">
-                            <select class="form-select border-0" aria-label="Default select example">
-                                <option selected>Job Category</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-primary">Search</button>
-                        </div>
-                    </div>
+                    <button type="submit" class="home-hero-btn rounded-3 py-2 px-4">Find Job</button>
+                </form>
+                <form action="#">
+                    <button type="submit" class="home-hero-btn rounded-3 py-2 px-5">Hire</button>
                 </form>
             </div>
         </div>
     </div>
     <!-- hero-section-end -->
+
+    <!-- footer-section-start -->
+    <div class="container-fluid">
+        <h4 class="mb-4 text-center">ELEVATEHIRE</h4>
+        <div class="row gx-3">
+            <div class="col">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#" class="text-decoration-none text-dark"></a>Who we are</li>
+                    <li><a href="#" class="text-decoration-none text-dark"></a>Our Mission</li>
+                    <li><a href="#" class="text-decoration-none text-dark"></a>Careers</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#" class="text-decoration-none text-dark"></a>Home </li>
+                    <li><a href="#" class="text-decoration-none text-dark"></a>Find Job</li>
+                    <li><a href="#" class="text-decoration-none text-dark"></a>Hire</li>
+                    <li><a href="#" class="text-decoration-none text-dark"></a>About</li>
+                    <li><a href="#" class="text-decoration-none text-dark"></a>Contact</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><a href="#" class="text-decoration-none text-dark"></a>Address</li>
+                    <li><a href="#" class="text-decoration-none text-dark"></a>Email</li>
+                    <li><a href="#" class="text-decoration-none text-dark"></a>Phone</li>
+                    <li><a href="#" class="text-decoration-none text-dark"></a>X</li>
+                    <li><a href="#" class="text-decoration-none text-dark"></a>LinkedIn</li>
+                </ul>
+            </div>
+        </div>
+        <span class="text-center d-block"> &copy;2025 CareerPortal. All Rights Reserved.</span>
+    </div>
+    <!-- footer-section-end -->
 </body>
 
 </html>
