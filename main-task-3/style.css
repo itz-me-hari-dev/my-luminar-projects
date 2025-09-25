@@ -27,14 +27,28 @@ body {
     margin-top: auto;
     margin-bottom: auto;
 }
+
 /* home-nav-section-style-end */
 
 /* home-hero-section-style-start */
-.home-hero-btn{
+.home-hero-btn {
     background-color: var(--bg-color-seconadry);
     color: var(--text-color-secondary);
-    border : 1px soild var(--text-color-primary);
+    border: 1px soild var(--text-color-primary);
 }
+
 /* home-hero-section-style-start */
 
 /* home-page-style-end */
+
+
+/* signin-page-style-start */
+
+.sign-in-up-card {
+    /* height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+/* signin-page-style-end */
