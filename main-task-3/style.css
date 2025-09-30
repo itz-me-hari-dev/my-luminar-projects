@@ -55,10 +55,63 @@ body {
 
 
 /* employee-page-style-start */
-.employer-profile-img{
+.employer-profile-img {
     width: 100px;
     height: 100px;
     top: 100%;
     left: 10%;
 }
+
 /* employer-page-style-end */
+
+
+/* add-job-page-style-start */
+.add-job-body {
+    margin: 5%;
+    background-color: var(--text-color-secondary);
+    border: 1px solid var(--bg-color-seconadry)
+}
+
+.add-job-heading {
+    font-size: 48px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--bg-color-seconadry);
+    text-align: center;
+}
+
+.form-floating>input,
+.form-floating>textarea{
+
+    border: 1px solid var(--bg-color-seconadry);
+}
+
+.btn{
+    background-color: var(--bg-color-seconadry);
+    color: var(--text-color-secondary);
+}
+
+/* add-job-page-style-end */
+
+/* application-page-style-start */
+.application-body{
+    margin: 5%;
+    background-color: var(--text-color-secondary);
+}
+
+.applicant-heading {
+    font-size: 48px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--bg-color-seconadry);
+    text-align: center;
+}
+
+.applicant-row{
+    height: 60px;
+}
+
+.applicant-resume-link{
+    color: var(--bg-color-seconadry);
+}
+/* application-page-style-end */
