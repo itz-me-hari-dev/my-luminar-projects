@@ -115,3 +115,20 @@ body {
     color: var(--bg-color-seconadry);
 }
 /* application-page-style-end */
+
+/* applied-jobs-page-style-start */
+.applied-jobs-body{
+    margin: 5%;
+    background-color: var(--text-color-secondary);
+}
+.status{
+    background-color: var(--bg-color-seconadry);
+    color: var(--text-color-secondary);
+    border-radius: 3%;
+    padding: 5px;
+}
+
+.applied-jobs-table-row{
+    height: 60px;
+}
+/* applied-jobs-page-style-end */
