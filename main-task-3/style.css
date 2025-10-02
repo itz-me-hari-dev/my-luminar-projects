@@ -134,6 +134,14 @@ body {
 /* applied-jobs-page-style-end */
 
 /* browse-job-page-style-start */
+.browse-job-heading{
+    font-size: 35px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--bg-color-seconadry);
+    text-align: center;
+}
+
 .browse-job-middle-body,
 .browse-job-side-body{
     background-color: var(--text-color-secondary);
@@ -158,7 +166,8 @@ body {
     width: 20%;
     background-color: var(--bg-color-seconadry);
     color: var(--text-color-secondary);
-    transition: all ease-in-out;
+    transition: all 0.3s ease-in-out;
+    
 }
 
 .apply-now-btn:hover{
@@ -166,5 +175,22 @@ body {
     background-color: var(--bg-color-primary);
     color: var(--text-color-primary);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.browse-job-link{
+    color: var(--bg-color-seconadry);
+    transition: all 0.3s ease-in-out;
+}
+
+.browse-job-link:hover{
+    font-size: 20px;
+}
+
+.browse-job-side-heading{
+    font-size: 25px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--bg-color-seconadry);
+    text-align: center;
 }
 /* browse-job-page-style-end */
