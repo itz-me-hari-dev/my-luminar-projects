@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+
+    <!-- bs--css-cdn-start -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- bs-css-cdn-end -->
+
+    <!-- bs-js-cdn-start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script> <!-- bs--js-cdn-end -->
+
+    <!-- font-awesome-cdn-start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font-awesome-cdn-end -->
+
+    <!-- google-font-link-start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- google-font-link-end -->
+
+    <!-- css-custom-start -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- css-custom-end -->
+
+</head>
+
+<body>
+
+    <!-- nav-section-start -->
+    <nav class="container navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ELEVATEHIRE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav gap-2">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Vacancies</a>
+                    <a class="nav-link" href="#">Community</a>
+                    <div class="nav-selector">
+                        <select class="border-0 bg-transparent text-muted" aria-label="Default select example">
+                            <option selected>Find a Job</option>
+                            <option value="1">Hire</option>
+                        </select>
+                    </div>
+                    <div class="ms-5">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- nav-section-end -->
+
+    <!-- body-section-start -->
+    <div class="container vh-100 vw-100 browse-job-body">
+        <div class="row gap-5">
+            <div class="col-lg-8 min-vh-100 p-3 browse-job-middle-body">
+                <!-- Job Card 1 -->
+                <div class="card mb-3 shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-2">
+                            <img src="./images/company-logo-1.png" alt="Company Logo" class="me-3 rounded"
+                                style="width:50px; height:50px; object-fit:cover;">
+                            <div>
+                                <h5 class="card-title mb-1">Frontend Developer</h5>
+                                <h6 class="card-subtitle text-muted">Google • California, USA</h6>
+                            </div>
+                        </div>
+                        <p class="card-text">We are looking for a skilled Frontend Developer with experience in React,
+                            JavaScript, and UI/UX principles.</p>
+                        <a href="#" class="btn apply-now-btn mx-auto">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Job Card 2 -->
+                <div class="card mb-3 shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-2">
+                            <img src="./images/company-logo-2.png" alt="Company Logo" class="me-3 rounded"
+                                style="width:50px; height:50px; object-fit:cover;">
+                            <div>
+                                <h5 class="card-title mb-1">Backend Developer</h5>
+                                <h6 class="card-subtitle text-muted">Amazon • Seattle, USA</h6>
+                            </div>
+                        </div>
+                        <p class="card-text">Hiring Backend Developer with Node.js, Express, and MongoDB expertise.</p>
+                        <a href="#" class="btn apply-now-btn mx-auto">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Job Card 3 -->
+                <div class="card mb-3 shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-2">
+                            <img src="./images/company-logo-3.png" alt="Company Logo" class="me-3 rounded"
+                                style="width:50px; height:50px; object-fit:cover;">
+                            <div>
+                                <h5 class="card-title mb-1">UI/UX Designer</h5>
+                                <h6 class="card-subtitle text-muted">Microsoft • Redmond, USA</h6>
+                            </div>
+                        </div>
+                        <p class="card-text">Seeking UI/UX Designer with Figma, Adobe XD, and strong design skills.</p>
+                        <a href="#" class="btn apply-now-btn mx-auto">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Job Card 4 -->
+                <div class="card mb-3 shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-2">
+                            <img src="./images/company-logo-4.png" alt="Company Logo" class="me-3 rounded"
+                                style="width:50px; height:50px; object-fit:cover;">
+                            <div>
+                                <h5 class="card-title mb-1">Data Scientist</h5>
+                                <h6 class="card-subtitle text-muted">IBM • New York, USA</h6>
+                            </div>
+                        </div>
+                        <p class="card-text">Looking for Data Scientist with expertise in Python, ML models, and big
+                            data analytics.</p>
+                        <a href="#" class="btn apply-now-btn mx-auto">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Job Card 5 -->
+                <div class="card mb-3 shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-2">
+                            <img src="./images/company-logo-5.png" alt="Company Logo" class="me-3 rounded"
+                                style="width:50px; height:50px; object-fit:cover;">
+                            <div>
+                                <h5 class="card-title mb-1">Cloud Engineer</h5>
+                                <h6 class="card-subtitle text-muted">Oracle • Austin, USA</h6>
+                            </div>
+                        </div>
+                        <p class="card-text">Hiring Cloud Engineer with AWS, Azure, and Kubernetes experience.</p>
+                        <a href="#" class="btn apply-now-btn mx-auto">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Job Card 6 -->
+                <div class="card mb-3 shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-2">
+                            <img src="./images/company-logo-6.png" alt="Company Logo" class="me-3 rounded"
+                                style="width:50px; height:50px; object-fit:cover;">
+                            <div>
+                                <h5 class="card-title mb-1">Mobile App Developer</h5>
+                                <h6 class="card-subtitle text-muted">Meta • Menlo Park, USA</h6>
+                            </div>
+                        </div>
+                        <p class="card-text">Hiring Mobile App Developer with Flutter and React Native expertise.</p>
+                        <a href="#" class="btn apply-now-btn mx-auto">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Job Card 7 -->
+                <div class="card mb-3 shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-2">
+                            <img src="./images/company-logo-7.png" alt="Company Logo" class="me-3 rounded"
+                                style="width:50px; height:50px; object-fit:cover;">
+                            <div>
+                                <h5 class="card-title mb-1">Cybersecurity Analyst</h5>
+                                <h6 class="card-subtitle text-muted">Cisco • San Jose, USA</h6>
+                            </div>
+                        </div>
+                        <p class="card-text">We are hiring Cybersecurity Analyst with expertise in threat analysis and
+                            network security.</p>
+                        <a href="#" class="btn apply-now-btn mx-auto">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 border border-danger min-vh-100 browse-job-side-body">
+                <div class="">Custom column padding</div>
+            </div>
+        </div>
+    </div>
+    <!-- body-section-end -->
+
+</body>
+
+</html>

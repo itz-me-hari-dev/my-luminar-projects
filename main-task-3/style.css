@@ -132,3 +132,39 @@ body {
     height: 60px;
 }
 /* applied-jobs-page-style-end */
+
+/* browse-job-page-style-start */
+.browse-job-middle-body,
+.browse-job-side-body{
+    background-color: var(--text-color-secondary);
+    border-radius: 10px;
+}
+
+.card{
+    border: var(--bg-color-primary) solid 2px;
+}
+
+.card-header{
+    background-color: var(--text-color-secondary);
+}
+
+.card-body{
+    background-color: var(--text-color-secondary);
+}
+
+.apply-now-btn{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    background-color: var(--bg-color-seconadry);
+    color: var(--text-color-secondary);
+    transition: all ease-in-out;
+}
+
+.apply-now-btn:hover{
+
+    background-color: var(--bg-color-primary);
+    color: var(--text-color-primary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+/* browse-job-page-style-end */
