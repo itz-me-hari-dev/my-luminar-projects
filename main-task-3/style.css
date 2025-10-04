@@ -55,11 +55,10 @@ body {
 
 
 /* employee-page-style-start */
-.employer-profile-img {
-    width: 100px;
-    height: 100px;
-    top: 100%;
-    left: 10%;
+.employer-profile-middle-body,
+.employer-profile-side-body{
+    background-color: var(--text-color-secondary);
+    border-radius: 10px;
 }
 
 /* employer-page-style-end */
@@ -100,7 +99,7 @@ body {
     border-radius: 10px;
 }
 
-.job-list-heading{
+.job-list-heading {
     font-size: 35px;
     font-weight: bold;
     color: transparent;
@@ -120,6 +119,7 @@ body {
     color: var(--text-color-primary);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
 /* job-list-page-style-end */
 
 /* application-page-style-start */
@@ -145,6 +145,23 @@ body {
 }
 
 /* application-page-style-end */
+
+/* jobseeker-page-style-start */
+.jobseeker-profile-middle-body,
+.jobseeker-profile-side-body {
+    background-color: var(--text-color-secondary);
+    border-radius: 10px;
+}
+
+.jobseeker-profile-heading {
+    font-size: 35px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--bg-color-seconadry);
+    text-align: center;
+}
+
+/* jobseeker-page-style-end */
 
 /* applied-jobs-page-style-start */
 .applied-jobs-body {
