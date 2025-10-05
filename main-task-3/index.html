@@ -38,7 +38,7 @@
 
 <body>
     <!-- nav-section-start -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="container navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">ELEVATEHIRE</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -49,13 +49,17 @@
                 <div class="navbar-nav gap-2">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                     <a class="nav-link" href="#">Vacancies</a>
-                    <a class="nav-link" href="#">Comapany Review</a>
                     <a class="nav-link" href="#">Community</a>
                     <div class="nav-selector">
                         <select class="border-0 bg-transparent text-muted" aria-label="Default select example">
                             <option selected>Find a Job</option>
                             <option value="1">Hire</option>
                         </select>
+                    </div>
+                    <div class="ms-5">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        </form>
                     </div>
                 </div>
             </div>
@@ -95,40 +99,39 @@
     <!-- body-section-end -->
 
     <!-- footer-section-start -->
-    <div class="container-fluid ps-5 d-flex flex-column justify-content-center align-content-center">
-        <h4 class="mb-4 text-center">ELEVATEHIRE</h4>
-        <div class="row">
-            <div class="col-lg-4 col-sm-12">
-                <h3>About Us</h3>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-decoration-none text-dark"></a>Who we are</li>
-                    <li><a href="#" class="text-decoration-none text-dark"></a>Our Mission</li>
-                    <li><a href="#" class="text-decoration-none text-dark"></a>Careers</li>
-                </ul>
+    <footer class="mt-5">
+        <div class="container">
+            <div class="row text-center text-lg-start">
+                <div class="col-lg-4 mb-4">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#">Who we are</a></li>
+                        <li><a href="#">Our Mission</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Find Job</a></li>
+                        <li><a href="#">Hire</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>Address: 123 Street</li>
+                        <li>Email: info@elevatehire.com</li>
+                        <li>Phone: +91 9876543210</li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-lg-4 col-sm-12">
-                <h3>Quick Links</h3>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-decoration-none text-dark"></a>Home </li>
-                    <li><a href="#" class="text-decoration-none text-dark"></a>Find Job</li>
-                    <li><a href="#" class="text-decoration-none text-dark"></a>Hire</li>
-                    <li><a href="#" class="text-decoration-none text-dark"></a>About</li>
-                    <li><a href="#" class="text-decoration-none text-dark"></a>Contact</li>
-                </ul>
-            </div>
-            <div class="col-lg-4 col-sm-12">
-                <h3>Contact Info</h3>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-decoration-none text-dark"></a>Address</li>
-                    <li><a href="#" class="text-decoration-none text-dark"></a>Email</li>
-                    <li><a href="#" class="text-decoration-none text-dark"></a>Phone</li>
-                    <li><a href="#" class="text-decoration-none text-dark"></a>X</li>
-                    <li><a href="#" class="text-decoration-none text-dark"></a>LinkedIn</li>
-                </ul>
-            </div>
+            <div class="text-center mt-3">&copy; 2025 ElevateHire. All Rights Reserved.</div>
         </div>
-        <span class="text-center d-block"> &copy;2025 CareerPortal. All Rights Reserved.</span>
-    </div>
+    </footer>
     <!-- footer-section-end -->
 </body>
 

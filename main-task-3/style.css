@@ -37,6 +37,44 @@ body {
     border: 1px soild var(--text-color-primary);
 }
 
+
+footer {
+    background-color: var(--text-color-secondary);
+    padding: 3rem;
+    color: var(--text-color-primary);
+}
+
+footer h3 {
+    color: var(--bg-color-seconadry);
+    font-weight: 700;
+}
+
+footer a {
+    text-decoration: none;
+    color: #444;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: var(--bg-color-seconadry);
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer .social-icons a {
+    margin-right: 10px;
+    color: var(--bg-color-seconadry);
+    font-size: 1.3rem;
+}
+
+footer .social-icons a:hover {
+    color: var(--text-color-primary);
+    transform: scale(1.2);
+}
+
 /* home-hero-section-style-start */
 
 /* home-page-style-end */
