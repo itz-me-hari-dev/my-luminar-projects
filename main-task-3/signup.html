@@ -37,42 +37,46 @@
 </head>
 
 <body>
-    <div class="sign-in-up-card h-100 d-flex justify-content-center align-items-center">
-        <div class="sign-in-up-body w-50">
-            <h1 class="sign-in-up-head text-center">Sign In</h1>
-            <form>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Enter Your Email Id">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Enter Your Email Id">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1"
-                        placeholder="Enter Your Password">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Comfirm Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1"
-                        placeholder="Enter Your Password To Comfirm">
-                </div>
-                <div>
-                    <label for="exampleInputRole" class="form-label">Role :</label>
-                    <input type="radio" id="exampleInputRoleEmployer">
-                    <label for="exampleInputRoleEmployer">Employer</label>
-                    <input type="radio" id="exampleInputRoleJobseeker">
-                    <label for="exampleInputRoleJobseeker">Jobseeker</label>
-                </div>
-                <div>
-                    <button type="submit" class="btn btn-primary d-block mx-auto">Submit</button>
-                </div>
-            </form>
-        </div>
+    <div class="signin-card">
+        <form>
+            <h2>Sign Up</h2>
+
+            <div class="mb-3 role-select">
+                <label for="role" class="form-label">Sign up as</label>
+                <select id="role" class="form-select">
+                    <option value="jobseeker">Jobseeker</option>
+                    <option value="employer">Employer</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password">
+            </div>
+
+            <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Re-enter your password">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+
+            <div class="text-center mt-3">
+                <p class="text-muted mb-0">
+                    Already have an account? <a href="./signin.html">Sign In</a>
+                </p>
+            </div>
+        </form>
     </div>
 </body>
 
