@@ -37,35 +37,76 @@
 </head>
 
 <body>
-    <div class="container add-job-body mx-auto">
-        <h1 class="add-job-heading mt-5">Add a New Job</h1>
-        <form class="p-5">
-            <div class="form-floating mb-3 w-50 mx-auto">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Title">
-                <label for="floatingInput">Title</label>
+
+    <!-- nav-section-start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="./index.html">ELEVATEHIRE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav align-items-center gap-3">
+                    <a class="nav-link  fw-semibold" href="./index.html">Home</a>
+                    <a class="nav-link  fw-semibold" href="./jobseeker-profile.html">Profile</a>
+                    <a class="nav-link active fw-semibold" href="./add-job.html">Add Job</a>
+                    <a class="nav-link fw-semibold" href="./job-list.html">Job List</a>
+                    <a class="nav-link fw-semibold" href="./applicants.html">View Applicants</a>
+                </div>
             </div>
-            <div class="form-floating mb-3 w-50 mx-auto">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Skills">
-                <label for="floatingInput">Skills</label>
+        </div>
+    </nav>
+    <!-- nav-section-end -->
+
+    <!-- body-section-start -->
+    <div class="container add-job-body my-5 pb-5 mx-auto">
+        <h1 class="add-job-heading text-center mb-4">Add a New Job</h1>
+        <form class="row g-3 justify-content-center">
+            <div class="col-12 col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="jobTitle" placeholder="Title">
+                    <label for="jobTitle">Title</label>
+                </div>
             </div>
-            <div class="form-floating mb-3 w-50 mx-auto">
-                <input type="text" class="form-control" id="floatingInput" placeholder="salary">
-                <label for="floatingInput">Salary</label>
+
+            <div class="col-12 col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="skills" placeholder="Skills">
+                    <label for="skills">Skills</label>
+                </div>
             </div>
-            <div class="form-floating mb-3 w-50 mx-auto">
-                <input type="text" class="form-control" id="floatingInput" placeholder="location">
-                <label for="floatingInput">Location</label>
+
+            <div class="col-12 col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="salary" placeholder="Salary">
+                    <label for="salary">Salary</label>
+                </div>
             </div>
-            <div class="form-floating mb-3 w-50 mx-auto">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                    style="height: 100px"></textarea>
-                <label for="floatingTextarea2">Description</label>
+
+            <div class="col-12 col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="location" placeholder="Location">
+                    <label for="location">Location</label>
+                </div>
             </div>
-            <div class="text-center mt-5">
-                <button type="submit" class="btn mx-auto py-5">Submit</button>
+
+            <div class="col-12">
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="description"
+                        style="height: 100px"></textarea>
+                    <label for="description">Description</label>
+                </div>
+            </div>
+
+            <div class="col-12 text-center mt-4">
+                <button type="submit" class="btn btn-primary px-5 py-2 w-25">Submit</button>
             </div>
         </form>
     </div>
+    <!-- body-section-end -->
+
 </body>
 
 </html>

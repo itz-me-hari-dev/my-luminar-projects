@@ -38,40 +38,97 @@
 
 
 <body>
+
+    <!-- nav-section-start -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="./index.html">ELEVATEHIRE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav align-items-center gap-3">
+                    <a class="nav-link fw-semibold" href="./index.html">Home</a>
+                    <a class="nav-link active fw-semibold" href="./signin.html">Sign In</a>
+                    <a class="nav-link fw-semibold" href="./signup.html">Sign Up</a>
+                    <form class="d-flex" role="search">
+                        <input class="form-control rounded-pill" type="search" placeholder="Search">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- nav-section-end -->
+
+
+    <!-- body-style-start -->
+
     <div class="signin-card">
-        <form>
+        <div class="p-4 w-100" style="max-width:420px;">
+
             <h2>Sign In</h2>
 
-            <div class="mb-3 role-select">
-                <label for="role" class="form-label">Sign in as</label>
-                <select id="role" class="form-select">
-                    <option value="jobseeker">Jobseeker</option>
-                    <option value="employer">Employer</option>
-                </select>
-            </div>
+            <ul class="nav nav-tabs mb-3 justify-content-center" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active text-dark" data-bs-toggle="tab" data-bs-target="#jobseeker"
+                        type="button">Jobseeker</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-dark" data-bs-toggle="tab" data-bs-target="#employer"
+                        type="button">Employer</button>
+                </li>
+            </ul>
 
-            <div class="mb-3">
-                <label for="email" class="form-label">Email Address</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter your email">
-            </div>
 
-            <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="Enter your password">
-            </div>
+            <div class="tab-content">
 
-            <button type="submit" class="btn btn-primary">Sign In</button>
+                <!-- jobseeker-section-start -->
+                <div class="tab-pane fade show active" id="jobseeker">
+                    <form action="./jobseeker-profile.html">
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" placeholder="Enter your password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign In</button>
+                    </form>
+                </div>
+                <!-- jobseeker-section-end -->
+
+
+                <!-- employer-section-start -->
+                <div class="tab-pane fade" id="employer">
+                    <form action="./employer-profile.html">
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" placeholder="Enter your password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign In</button>
+                    </form>
+                </div>
+                <!-- employer-section-start -->
+
+            </div>
 
             <div class="text-center mt-3">
-                <p class="text-muted mb-1">
-                    <a href="#">Forgot password?</a>
-                </p>
-                <p class="text-muted mb-0">
-                    Don’t have an account? <a href="./signup.html">Sign Up</a>
-                </p>
+                <p class="text-muted mb-1"><a href="#">Forgot password?</a></p>
+                <p class="text-muted mb-0">Don’t have an account? <a href="./signup.html">Sign Up</a></p>
             </div>
-        </form>
+        </div>
     </div>
+
+    <!-- body-style-end -->
+
 </body>
 
 </html>

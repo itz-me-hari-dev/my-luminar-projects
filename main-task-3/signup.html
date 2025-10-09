@@ -37,47 +37,116 @@
 </head>
 
 <body>
+
+    <!-- nav-section-start -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="./index.html">ELEVATEHIRE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav align-items-center gap-3">
+                    <a class="nav-link  fw-semibold" href="./index.html">Home</a>
+                    <a class="nav-link fw-semibold" href="./signin.html">Sign In</a>
+                    <a class="nav-link active fw-semibold" href="./signup.html">Sign Up</a>
+                    <form class="d-flex" role="search">
+                        <input class="form-control rounded-pill" type="search" placeholder="Search">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- nav-section-end -->
+
+
+
+    <!-- body-style-start -->
+
     <div class="signin-card">
-        <form>
-            <h2>Sign Up</h2>
+        <div class="p-4 w-100" style="max-width:420px;">
 
-            <div class="mb-3 role-select">
-                <label for="role" class="form-label">Sign up as</label>
-                <select id="role" class="form-select">
-                    <option value="jobseeker">Jobseeker</option>
-                    <option value="employer">Employer</option>
-                </select>
+            <h2 class="text-center mb-4">Sign Up</h2>
+
+
+            <ul class="nav nav-tabs mb-3 justify-content-center" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active text-dark" data-bs-toggle="tab" data-bs-target="#jobseeker"
+                        type="button">Jobseeker</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-dark" data-bs-toggle="tab" data-bs-target="#employer"
+                        type="button">Employer</button>
+                </li>
+            </ul>
+
+
+            <div class="tab-content">
+
+                <!-- jobseeker-section-start -->
+
+                <div class="tab-pane fade show active" id="jobseeker" role="tabpanel">
+                    <form action="./jobseeker-profile.html">
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" placeholder="Enter your password" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" placeholder="Re-enter your password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+                    </form>
+                </div>
+                <!-- jobseeker-section-end -->
+
+
+                <!-- employer-section-end -->
+
+                <div class="tab-pane fade" id="employer" role="tabpanel">
+                    <form action="./employer-profile.html">
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" placeholder="Enter your full name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" placeholder="Enter your password">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" placeholder="Re-enter your password">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+                    </form>
+                </div>
+                <!-- employer-section-end -->
+
             </div>
-
-            <div class="mb-3">
-                <label for="name" class="form-label">Full Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter your full name">
-            </div>
-
-            <div class="mb-3">
-                <label for="email" class="form-label">Email Address</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter your email">
-            </div>
-
-            <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="Enter your password">
-            </div>
-
-            <div class="mb-3">
-                <label for="confirmPassword" class="form-label">Confirm Password</label>
-                <input type="password" class="form-control" id="confirmPassword" placeholder="Re-enter your password">
-            </div>
-
-            <button type="submit" class="btn btn-primary">Sign Up</button>
 
             <div class="text-center mt-3">
-                <p class="text-muted mb-0">
-                    Already have an account? <a href="./signin.html">Sign In</a>
-                </p>
+                <p class="text-muted mb-0">Already have an account? <a href="./signin.html">Sign In</a></p>
             </div>
-        </form>
+        </div>
     </div>
+    <!-- signup-body-style-end -->
+
 </body>
 
 </html>

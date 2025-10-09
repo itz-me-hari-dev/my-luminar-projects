@@ -37,30 +37,24 @@
 </head>
 
 <body>
+    
     <!-- nav-section-start -->
-    <nav class="container navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">ELEVATEHIRE</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="./index.html">ELEVATEHIRE</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav gap-2">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Vacancies</a>
-                    <a class="nav-link" href="#">Community</a>
-                    <div class="nav-selector">
-                        <select class="border-0 bg-transparent text-muted" aria-label="Default select example">
-                            <option selected>Find a Job</option>
-                            <option value="1">Hire</option>
-                        </select>
-                    </div>
-                    <div class="ms-5">
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        </form>
-                    </div>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav align-items-center gap-3">
+                    <a class="nav-link active fw-semibold" href="./index.html">Home</a>
+                    <a class="nav-link fw-semibold" href="./signin.html">Sign In</a>
+                    <a class="nav-link fw-semibold" href="./signup.html">Sign Up</a>
+                    <form class="d-flex" role="search">
+                        <input class="form-control rounded-pill" type="search" placeholder="Search">
+                    </form>
                 </div>
             </div>
         </div>
@@ -68,35 +62,47 @@
     <!-- nav-section-end -->
 
     <!-- hero-section-start -->
-    <div class="conatiner-fluid hero-bg-style w-100 d-flex justify-content-between p-5">
-        <div class="row">
-            <div class="col-lg-6 col-sm-12">
-                <div class="w-100 min-vh-100 p-5">
-                    <h1 class="display-3">Find Your Dream Job</h1>
-                    <h2 class="fw-normal">Connecting talented professionals</h2>
-                    <h2>with top employers.</h2>
-                    <div class="d-flex gap-5 py-5">
-                        <form action="">
-                            <button type="submit" class="home-hero-btn rounded-3 py-2 px-4">Find Job</button>
-                        </form>
-                        <form action="#">
-                            <button type="submit" class="home-hero-btn rounded-3 py-2 px-5">Hire</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-sm-12">
-                <div>
-                    <img src="./images/home-hero-img.png" alt="">
+    <div class="container mt-5 px-5">
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="">
+                <h1 class="display-4 fw-bold text-dark">Find Your Dream Job</h1>
+                <p class="lead text-muted">Connecting talented professionals with top employers worldwide.</p>
+                <div class="mt-4 d-flex gap-3 justify-content-center">
+                    <a href="./signin.html" class="btn common-btn">Sign In</a>
+                    <a href="./signup.html" class="btn common-btn">Sign Up</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- hero-section-end -->
 
-    <!-- body-section-start -->
-
-    <!-- body-section-end -->
+    <!-- feature-section-start -->
+    <div class="container text-center py-5 px-5">
+        <h2 class="fw-bold mb-4">Why Choose ElevateHire?</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm p-4 rounded-4 feature-card">
+                    <h4 class="fw-semibold mb-2">Easy Apply</h4>
+                    <p class="">Apply for jobs quickly with one click and track your applications
+                        effortlessly.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm p-4 rounded-4 feature-card">
+                    <h4 class="fw-semibold mb-2">Verified Employers</h4>
+                    <p class="">We ensure every employer is verified for safe and genuine job listings.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm p-4 rounded-4 feature-card">
+                    <h4 class="fw-semibold mb-2">Smart Matching</h4>
+                    <p class="">AI-based job recommendations tailored to your skills and preferences.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- feature-section-end -->
 
     <!-- footer-section-start -->
     <footer class="mt-5">

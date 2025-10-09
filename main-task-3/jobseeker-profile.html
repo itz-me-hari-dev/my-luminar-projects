@@ -39,36 +39,31 @@
 <body>
 
     <!-- nav-section-start -->
-    <nav class="container navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">ELEVATEHIRE</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="./index.html">ELEVATEHIRE</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav gap-2">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Vacancies</a>
-                    <a class="nav-link" href="#">Community</a>
-                    <div class="nav-selector">
-                        <select class="border-0 bg-transparent text-muted" aria-label="Default select example">
-                            <option selected>Find a Job</option>
-                            <option value="1">Hire</option>
-                        </select>
-                    </div>
-                    <div class="ms-5">
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        </form>
-                    </div>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav align-items-center gap-3">
+                    <a class="nav-link  fw-semibold" href="./index.html">Home</a>
+                    <a class="nav-link active  fw-semibold" href="./jobseeker-profile.html">Profile</a>
+                    <a class="nav-link fw-semibold" href="./browse-jobs.html">Browse Jobs</a>
+                    <a class="nav-link fw-semibold" href="./applied-jobs.html">Applied Jobs</a>
+                    <form class="d-flex" role="search">
+                        <input class="form-control rounded-pill" type="search" placeholder="Search">
+                    </form>
                 </div>
             </div>
         </div>
     </nav>
     <!-- nav-section-end -->
 
-    <div class="container vh-100 vw-100 jobseeker-profile-body mx-auto">
+    <!-- body-section-start -->
+    <div class="container vh-100 jobseeker-profile-body mx-auto my-5">
         <div class="row gap-5">
             <div class="col-lg-8 h-100 mb-5 p-3 jobseeker-profile-middle-body">
 
@@ -127,7 +122,7 @@
                             <h5 class="mb-0 mx-auto">Resume</h5>
 
                         </div>
-                        <div class="w-100 d-flex gap-3"> 
+                        <div class="w-100 d-flex gap-3">
                             <a href="#" class="btn apply-now-btn w-50">Edit</a>
                             <a href="#" class="btn apply-now-btn w-50">View Resume</a>
                         </div>
@@ -139,7 +134,7 @@
             <div class="col-lg-3 h-100 jobseeker-profile-side-body p-3">
 
                 <!-- Companies to Follow -->
-                <div class="mb-4">
+                <div class="mb-5">
                     <h5 class="mb-3 browse-job-side-heading">Companies to Follow</h5>
                     <ul class="list-group">
                         <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -191,6 +186,8 @@
             </div>
         </div>
     </div>
+    <!-- body-section-en -->
+
 </body>
 
 </html>

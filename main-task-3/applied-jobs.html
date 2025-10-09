@@ -37,103 +37,133 @@
 </head>
 
 <body>
-    <div class="container applied-jobs-body mx-auto">
+
+    <!-- nav-section-start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="./index.html">ELEVATEHIRE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav align-items-center gap-3">
+                    <a class="nav-link  fw-semibold" href="./index.html">Home</a>
+                    <a class="nav-link   fw-semibold" href="./jobseeker-profile.html">Profile</a>
+                    <a class="nav-link   fw-semibold" href="./browse-jobs.html">Browse Jobs</a>
+                    <a class="nav-link active fw-semibold" href="./applied-jobs.html">Applied Jobs</a>
+                    <form class="d-flex" role="search">
+                        <input class="form-control rounded-pill" type="search" placeholder="Search">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- nav-section-end -->
+
+    <!-- body-section-start -->
+    <div class="container applied-jobs-body mx-auto my-5 mb-5">
         <h1 class="add-job-heading mt-5 mb-5">Your Applied Jobs</h1>
-        <table class="table text-center">
-            <thead>
-                <tr class="applied-jobs-table-row">
-                    <th scope="col">#</th>
-                    <th scope="col">Job Title</th>
-                    <th scope="col">Company</th>
-                    <th scope="col">Location</th>
-                    <th scope="col">Status</th>
-                    <th scope="col">Date Applied</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="applied-jobs-table-row">
-                    <th scope="row">1</th>
-                    <td>Frontend Developer</td>
-                    <td>Google</td>
-                    <td>California, USA</td>
-                    <td><span class="status">Pending</span></td>
-                    <td>2025-09-20</td>
-                </tr>
-                <tr class="applied-jobs-table-row">
-                    <th scope="row">2</th>
-                    <td>Data Analyst</td>
-                    <td>Amazon</td>
-                    <td>Seattle, USA</td>
-                    <td><span class="status">Reviewed</span></td>
-                    <td>2025-09-18</td>
-                </tr>
-                <tr class="applied-jobs-table-row">
-                    <th scope="row">3</th>
-                    <td>Software Engineer</td>
-                    <td>Microsoft</td>
-                    <td>Redmond, USA</td>
-                    <td><span class="status">Shortlisted</span></td>
-                    <td>2025-09-15</td>
-                </tr>
-                <tr class="applied-jobs-table-row">
-                    <th scope="row">4</th>
-                    <td>Backend Developer</td>
-                    <td>Netflix</td>
-                    <td>Los Angeles, USA</td>
-                    <td><span class="status">Rejected</span></td>
-                    <td>2025-09-10</td>
-                </tr>
-                <tr class="applied-jobs-table-row">
-                    <th scope="row">5</th>
-                    <td>Cloud Engineer</td>
-                    <td>IBM</td>
-                    <td>New York, USA</td>
-                    <td><span class="status">Pending</span></td>
-                    <td>2025-09-08</td>
-                </tr>
-                <tr class="applied-jobs-table-row">
-                    <th scope="row">6</th>
-                    <td>AI Researcher</td>
-                    <td>OpenAI</td>
-                    <td>San Francisco, USA</td>
-                    <td><span class="status">Reviewed</span></td>
-                    <td>2025-09-05</td>
-                </tr>
-                <tr class="applied-jobs-table-row">
-                    <th scope="row">7</th>
-                    <td>UI/UX Designer</td>
-                    <td>Adobe</td>
-                    <td>Austin, USA</td>
-                    <td><span class="status">Shortlisted</span></td>
-                    <td>2025-09-02</td>
-                </tr>
-                <tr class="applied-jobs-table-row">
-                    <th scope="row">8</th>
-                    <td>DevOps Engineer</td>
-                    <td>Facebook</td>
-                    <td>Menlo Park, USA</td>
-                    <td><span class="status">Pending</span></td>
-                    <td>2025-08-30</td>
-                </tr>
-                <tr class="applied-jobs-table-row">
-                    <th scope="row">9</th>
-                    <td>Cybersecurity Analyst</td>
-                    <td>Cisco</td>
-                    <td>Boston, USA</td>
-                    <td><span class="status">Rejected</span></td>
-                    <td>2025-08-28</td>
-                </tr>
-                <tr class="applied-jobs-table-row">
-                    <th scope="row">10</th>
-                    <td>Machine Learning Engineer</td>
-                    <td>Tesla</td>
-                    <td>Palo Alto, USA</td>
-                    <td><span class="status">Reviewed</span></td>
-                    <td>2025-08-25</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table class="table text-center">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th data-label="Job Title">Job Title</th>
+                        <th data-label="Company">Company</th>
+                        <th data-label="Location">Location</th>
+                        <th data-label="Status">Status</th>
+                        <th data-label="Date Applied">Date Applied</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="table-mob">1</th>
+                        <td data-label="Job Title">Frontend Developer</td>
+                        <td data-label="Company">Google</td>
+                        <td data-label="Location">California, USA</td>
+                        <td data-label="Status"><span class="status">Pending</span></td>
+                        <td data-label="Date Applied">2025-09-20</td>
+                    </tr>
+                    <tr>
+                        <th class="table-mob">2</th>
+                        <td data-label="Job Title">Data Analyst</td>
+                        <td data-label="Company">Amazon</td>
+                        <td data-label="Location">Seattle, USA</td>
+                        <td data-label="Status"><span class="status">Reviewed</span></td>
+                        <td data-label="Date Applied">2025-09-18</td>
+                    </tr>
+                    <tr>
+                        <th class="table-mob">3</th>
+                        <td data-label="Job Title">Software Engineer</td>
+                        <td data-label="Company">Microsoft</td>
+                        <td data-label="Location">Redmond, USA</td>
+                        <td data-label="Status"><span class="status">Shortlisted</span></td>
+                        <td data-label="Date Applied">2025-09-15</td>
+                    </tr>
+                    <tr>
+                        <th class="table-mob">4</th>
+                        <td data-label="Job Title">Backend Developer</td>
+                        <td data-label="Company">Netflix</td>
+                        <td data-label="Location">Los Angeles, USA</td>
+                        <td data-label="Status"><span class="status">Rejected</span></td>
+                        <td data-label="Date Applied">2025-09-10</td>
+                    </tr>
+                    <tr>
+                        <th class="table-mob">5</th>
+                        <td data-label="Job Title">Cloud Engineer</td>
+                        <td data-label="Company">IBM</td>
+                        <td data-label="Location">New York, USA</td>
+                        <td data-label="Status"><span class="status">Pending</span></td>
+                        <td data-label="Date Applied">2025-09-08</td>
+                    </tr>
+                    <tr>
+                        <th class="table-mob">6</th>
+                        <td data-label="Job Title">AI Researcher</td>
+                        <td data-label="Company">OpenAI</td>
+                        <td data-label="Location">San Francisco, USA</td>
+                        <td data-label="Status"><span class="status">Reviewed</span></td>
+                        <td data-label="Date Applied">2025-09-05</td>
+                    </tr>
+                    <tr>
+                        <th class="table-mob">7</th>
+                        <td data-label="Job Title">UI/UX Designer</td>
+                        <td data-label="Company">Adobe</td>
+                        <td data-label="Location">Austin, USA</td>
+                        <td data-label="Status"><span class="status">Shortlisted</span></td>
+                        <td data-label="Date Applied">2025-09-02</td>
+                    </tr>
+                    <tr>
+                        <th class="table-mob">8</th>
+                        <td data-label="Job Title">DevOps Engineer</td>
+                        <td data-label="Company">Facebook</td>
+                        <td data-label="Location">Menlo Park, USA</td>
+                        <td data-label="Status"><span class="status">Pending</span></td>
+                        <td data-label="Date Applied">2025-08-30</td>
+                    </tr>
+                    <tr>
+                        <th class="table-mob">9</th>
+                        <td data-label="Job Title">Cybersecurity Analyst</td>
+                        <td data-label="Company">Cisco</td>
+                        <td data-label="Location">Boston, USA</td>
+                        <td data-label="Status"><span class="status">Rejected</span></td>
+                        <td data-label="Date Applied">2025-08-28</td>
+                    </tr>
+                    <tr>
+                        <th class="table-mob">10</th>
+                        <td data-label="Job Title">Machine Learning Engineer</td>
+                        <td data-label="Company">Tesla</td>
+                        <td data-label="Location">Palo Alto, USA</td>
+                        <td data-label="Status"><span class="status">Reviewed</span></td>
+                        <td data-label="Date Applied">2025-08-25</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
+    <!-- body-section-start -->
+
 </body>
 
 </html>

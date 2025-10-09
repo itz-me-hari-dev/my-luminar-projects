@@ -37,7 +37,31 @@
 </head>
 
 <body>
-    <div class="container application-body mx-auto">
+
+    <!-- nav-section-start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="./index.html">ELEVATEHIRE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav align-items-center gap-3">
+                    <a class="nav-link  fw-semibold" href="./index.html">Home</a>
+                    <a class="nav-link  fw-semibold" href="./jobseeker-profile.html">Profile</a>
+                    <a class="nav-link  fw-semibold" href="./add-job.html">Add Job</a>
+                    <a class="nav-link fw-semibold" href="./job-list.html">Job List</a>
+                    <a class="nav-link active fw-semibold" href="./applicants.html">View Applicants</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- nav-section-end -->
+
+    <!-- body-section-start -->
+    <div class="container application-body mx-auto my-5">
         <h1 class="applicant-heading mt-5 mb-5">View Applicants</h1>
         <table class="table">
             <thead>
@@ -114,6 +138,8 @@
 
 
     </div>
+    <!-- body-section-end -->
+
 </body>
 
 </html>
