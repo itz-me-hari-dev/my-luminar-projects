@@ -224,6 +224,10 @@ footer .social-icons a:hover {
     color: var(--text-color-secondary);
 }
 
+.add-job-btn{
+    min-width: 100px;
+    max-width: 200px;
+}
 /* add-job-page-style-end */
 
 /* job-list-page-style-start */
