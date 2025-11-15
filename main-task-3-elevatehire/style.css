@@ -18,9 +18,9 @@ body {
     overflow-x: hidden;
 }
 
-.navbar-nav {
+/* .navbar-nav {
     margin-left: 25%;
-}
+} */
 
 .navbar-brand {
     color: var(--bg-color-seconadry);
